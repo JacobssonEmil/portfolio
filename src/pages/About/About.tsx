@@ -6,7 +6,7 @@ function About() {
     return (
         <Container maxWidth="600px" marginTop="200px" color={'#EEEEEE'}>
             <Box textAlign="center" >
-                <Heading size="3xl">Hey! I am Emil</Heading>
+                <Heading size="3xl">Emil J.</Heading>
                 <Text marginTop="8" fontSize="2xl">
                     <Highlight query={['fullstack developer', 'responsive', 'user-friendly applications']} styles={{ px: '2', py: '0', rounded: 'full', bgGradient: 'linear(to-r, #6EE7B7, #00ADB5, #3B82F6)', color: '#222831' }}>
                         {"I am a passionate fullstack developer from Sweden, who enjoys creating responsive and user-friendly applications. Always eager to learn new technologies and apply them in projects."}
