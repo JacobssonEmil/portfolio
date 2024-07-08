@@ -24,7 +24,7 @@ function Education() {
                 direction={{ base: "column", lg: "row" }}
                 wrap="wrap"
                 justifyContent={{ base: "center", md: "space-between" }}
-                mt={50}
+                mt={4}
                 alignItems="center" 
             >
                 <Box mb={10}>

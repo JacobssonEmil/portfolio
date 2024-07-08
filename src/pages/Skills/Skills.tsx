@@ -23,7 +23,7 @@ function Skills() {
                 direction={{ base: "column", xl: "row" }}
                 wrap="wrap"
                 justifyContent={{ base: "center", md: "space-between" }}
-                mt={50}
+                mt={4}
                 alignItems="center"
             >
                 <Image mt={10} mb={10} src='/images/Skills.gif' alt='Skills' maxBlockSize="400px" objectFit="cover" />
