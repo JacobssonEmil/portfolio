@@ -12,7 +12,7 @@ import Footer from './pages/Footer/Footer';
 const App = () => {
   return (
     
-    <Box bg={'#222831'}>
+    <Box>
       <ScrollIndicator/>
       <Navbar />
       <Box id="about" >

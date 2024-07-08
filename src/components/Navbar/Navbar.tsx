@@ -13,9 +13,10 @@ const NavLink = ({ children, to }: { children: React.ReactNode, to: string }) =>
     rounded={'md'}
     _hover={{
       textDecoration: 'underline',
-      textDecorationColor: '#00ADB5',
+      textDecorationColor: 'accent', // Updated to use global accent color
       textDecorationThickness: '2px'
     }}
+    color="text" // Updated to use global text color
   >
     {children}
   </Box>
@@ -25,12 +26,12 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Container maxWidth={1400} color={'#EEEEEE'}>
-      <Box bg={'transparent'} px={0}>
+    <Container maxWidth={1400} color='text'> {/* Updated to use global text color */}
+      <Box bg='background'> {/* Updated to use global background color */}
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
-            icon={isOpen ? <CloseIcon color={'#EEEEEE'} /> : <HamburgerIcon boxSize="24px" color={'#EEEEEE'} />}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon boxSize="24px" />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
@@ -39,6 +40,7 @@ const Navbar = () => {
             _hover={{ bg: 'transparent' }}
             _active={{ bg: 'transparent' }}
             _focus={{ boxShadow: 'none' }}
+            color="text" // Ensuring icon uses text color
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
@@ -53,22 +55,22 @@ const Navbar = () => {
                 <Avatar size='sm' name='Emil Jacobsson' src='/images/Profilbild.jpeg' />
                 <ChevronDownIcon boxSize={6}></ChevronDownIcon>
               </MenuButton>
-              <MenuList bg={'#EEEEEE'}>
-                <Link href='https://www.linkedin.com/in/emiljacobsson/' isExternal color={'#393E46'} _hover={{
+              <MenuList>
+                <Link href='https://www.linkedin.com/in/emiljacobsson/' isExternal _hover={{
                   textDecoration: 'underline',
-                  textDecorationColor: '#00ADB5',
+                  textDecorationColor: 'accent', // Updated to use global accent color
                   textDecorationThickness: '2px'
-                }}><MenuItem bg={'#EEEEEE'}><Flex marginEnd={2}><FaLinkedin color='#0A66C2' /></Flex><Text color={'#393E46'}>Linkedin</Text></MenuItem></Link>
-                <Link href='https://github.com/JacobssonEmil' isExternal color={'#393E46'} _hover={{
+                }}><MenuItem><Flex marginEnd={2}><FaLinkedin color='#0A66C2' /></Flex><Text>Linkedin</Text></MenuItem></Link>
+                <Link href='https://github.com/JacobssonEmil' isExternal _hover={{
                   textDecoration: 'underline',
-                  textDecorationColor: '#00ADB5',
+                  textDecorationColor: 'accent', // Updated to use global accent color
                   textDecorationThickness: '2px'
-                }}><MenuItem bg={'#EEEEEE'}><Flex marginEnd={2}><FaGithub color='#181717' /></Flex><Text color={'#393E46'}>Github</Text></MenuItem></Link>
-                <Link href="mailto:emil@jacobsson.com" isExternal color={'#393E46'} _hover={{
+                }}><MenuItem><Flex marginEnd={2}><FaGithub color='#181717' /></Flex><Text>Github</Text></MenuItem></Link>
+                <Link href="mailto:emil@jacobsson.com" isExternal _hover={{
                   textDecoration: 'underline',
-                  textDecorationColor: '#00ADB5',
+                  textDecorationColor: 'accent', // Updated to use global accent color
                   textDecorationThickness: '2px'
-                }}><MenuItem bg={'#EEEEEE'}><EmailIcon marginTop={1} marginEnd={2} color={'black'} /><Text color={'#393E46'}>Email</Text></MenuItem></Link>
+                }}><MenuItem><EmailIcon marginTop={1} marginEnd={2} color='text' /><Text>Email</Text></MenuItem></Link>
               </MenuList>
             </Menu>
           </Flex>
@@ -85,7 +87,6 @@ const Navbar = () => {
       </Box>
       <hr></hr>
     </Container>
-
   );
 };
 

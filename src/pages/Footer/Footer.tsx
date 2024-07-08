@@ -1,58 +1,44 @@
-import {
-  Box,
-  Container,
-  Stack,
-  Text,
-  Icon,
-  Link,
-  VStack,
-  HStack,
-  Wrap,
-  WrapItem,
-} from '@chakra-ui/react';
+import { Box, Container, Stack, Text, Icon, Link, VStack, HStack, Wrap, WrapItem } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 import { EmailIcon } from '@chakra-ui/icons';
 
 const Footer = () => {
   return (
-    <Box
-      bg={'#222831'}
-      color={'#EEEEEE'}>
-      <Container as={Stack} maxW={'1200px'} py={10} mt={150}>
+    <Box bg="background" color='text'> {/* Consistent background and text color */}
+      <Container as={Stack} maxW='1200px' py={10} mt={150} align="center">
         <VStack spacing={4}>
-          <Wrap justify="center" spacingX="30px" >
+          <Wrap justify="center" spacingX="40px">
             <WrapItem>
-              <Link href="#about" color={'#00ADB5'} _hover={{ color: '#EEEEEE' }}>About</Link>
+              <Link href="#about" _hover={{ color: 'accent', textDecoration: 'underline' }}>About</Link>
             </WrapItem>
             <WrapItem>
-              <Link href="#education" color={'#00ADB5'} _hover={{ color: '#EEEEEE' }}>Education</Link>
+              <Link href="#education" _hover={{ color: 'accent', textDecoration: 'underline' }}>Education</Link>
             </WrapItem>
             <WrapItem>
-              <Link href="#projects" color={'#00ADB5'} _hover={{ color: '#EEEEEE' }}>Projects</Link>
+              <Link href="#projects" _hover={{ color: 'accent', textDecoration: 'underline' }}>Projects</Link>
             </WrapItem>
             <WrapItem>
-              <Link href="#skills" color={'#00ADB5'} _hover={{ color: '#EEEEEE' }}>Technologies and Tools</Link>
+              <Link href="#skills" _hover={{ color: 'accent', textDecoration: 'underline' }}>Technologies and Tools</Link>
             </WrapItem>
           </Wrap>
-          <Text mt={5}>Contact me directly at: <Link href="mailto:emil@jacobsson.com" color={'#00ADB5'} _hover={{ textDecoration: 'underline' }}>emil@jacobsson.com</Link></Text>
-          <HStack spacing={5}>
+          <Text mt={5}>Contact me directly at: <Link href="mailto:emil@jacobsson.com" _hover={{ color: 'accent', textDecoration: 'underline' }}>emil@jacobsson.com</Link></Text>
+          <HStack spacing={8}>
             <Link href="https://github.com/JacobssonEmil" isExternal>
-              <Icon as={FaGithub} boxSize={6} color={'#EEEEEE'} _hover={{ color: '#00ADB5' }} />
+              <Icon as={FaGithub} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
             </Link>
             <Link href="https://www.linkedin.com/in/emiljacobsson/" isExternal>
-              <Icon as={FaLinkedin} boxSize={6} color={'#EEEEEE'} _hover={{ color: '#00ADB5' }} />
+              <Icon as={FaLinkedin} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
             </Link>
             <Link href="mailto:emil@jacobsson.com" isExternal>
-              <EmailIcon boxSize={6} color={'#EEEEEE'} _hover={{ color: '#00ADB5' }} />
+              <EmailIcon boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
             </Link>
-            <Link href="tel:">
-              <Icon as={FaPhone} boxSize={6} color={'#EEEEEE'} _hover={{ color: '#00ADB5' }} />
+            <Link href="tel:+1234567890">
+              <Icon as={FaPhone} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
             </Link>
-            
           </HStack>
         </VStack>
         <Box pt={5}>
-          <Text fontSize={'sm'} color={'#393E46'}>
+          <Text fontSize='sm' color='secondary'>
             © 2024 by Emil Jacobsson. All rights reserved.
           </Text>
         </Box>

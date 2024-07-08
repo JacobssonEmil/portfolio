@@ -6,14 +6,16 @@ function Education() {
     return (
         <Container maxWidth="1200px" marginTop="200px">
             <Box>
-                <Heading size="lg" color={'#EEEEEE'}>
+                <Heading size="lg" color='text'> {/* Updated to global text color */}
                     <chakra.span
-                        borderBottom="3px solid #00ADB5"
+                        borderBottom="3px solid" 
+                        borderColor={"accent"}
                         display="inline-block"
                         paddingBottom="4px"
                     >
-                        <Flex><Box mt={1}><FaGraduationCap color="#EEEEEE"/></Box>
-                        <Text ml={2}>Education</Text></Flex>
+                        <Flex><Box mt={1}><FaGraduationCap color='text'/></Box> {/* Updated icon color to text */}
+                        <Text ml={2} color='text'>Education</Text> {/* Updated text color */}
+                        </Flex>
                     </chakra.span>
                 </Heading>
             </Box>
@@ -31,7 +33,7 @@ function Education() {
                     <EducationCard title='Technology Program' name='NTI Gymnasiet, Helsingborg' date='Aug 2017 - Jun 2020'/>
                 </Box>
 
-                <Image src='/images/Education.gif' alt='Education' maxBlockSize="450px" objectFit="cover" alignSelf="center"/>
+                <Image src='/images/HandCoding.gif' alt='Education' maxBlockSize="450px" objectFit="cover" alignSelf="center"/>
             </Flex>
 
         </Container>

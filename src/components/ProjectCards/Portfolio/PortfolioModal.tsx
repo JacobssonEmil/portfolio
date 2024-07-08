@@ -26,7 +26,7 @@ const PortfolioModal: React.FC<SmartHouseoModalProps> = ({ isOpen, onClose }) =>
     <>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent ml={2} mr={2}>
+        <ModalContent bgColor='background' color='text' mr={2} ml={2}>
           <ModalHeader>Portfolio</ModalHeader>
           <ModalCloseButton />
           <ModalBody>

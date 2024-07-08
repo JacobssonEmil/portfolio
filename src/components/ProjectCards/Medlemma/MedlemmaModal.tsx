@@ -21,12 +21,12 @@ interface SmartHouseoModalProps {
   onClose: () => void;
 }
 
-const PortfolioModal: React.FC<SmartHouseoModalProps> = ({ isOpen, onClose }) => {
+const MedlemmaModal: React.FC<SmartHouseoModalProps> = ({ isOpen, onClose }) => {
   return (
     <>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent ml={2} mr={2}>
+        <ModalContent bgColor='background' color='text' mr={2} ml={2}>
           <ModalHeader>Medlemma</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
@@ -56,4 +56,4 @@ const PortfolioModal: React.FC<SmartHouseoModalProps> = ({ isOpen, onClose }) =>
   );
 }
 
-export default PortfolioModal;
+export default MedlemmaModal;

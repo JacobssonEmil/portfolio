@@ -1,32 +1,42 @@
 import { Card, CardBody, Heading, Text, Box } from "@chakra-ui/react";
 import { GiGraduateCap } from "react-icons/gi";
 
-interface EducationCardProps{
+interface EducationCardProps {
     title: string;
     name: string;
     date: string;
 }   
 
-function  EducationCard({title, name, date}: EducationCardProps) {
+function EducationCard({title, name, date}: EducationCardProps) {
     return (
-        <Card maxWidth={500} bgGradient='linear(to-r, #6EE7B7, #00ADB5, #3B82F6)' boxShadow='dark-lg' rounded='md' overflow='hidden' mb={5} _hover={{
-            transform: 'scale(1.03)',
-            transition: 'transform 0.2s',
-        }}>
-            
-
-            <CardBody padding={7} position="relative">
-                <Box color={'white'} display="flex" alignItems="center">
-                    <GiGraduateCap size="30" />
-                    <Heading size={'md'} ml={3}>{title}</Heading>
+        <Card
+            maxWidth="500px"
+            boxShadow="xl"
+            rounded="lg"
+            overflow="hidden"
+            mb={5}
+            p={4}
+            bgGradient="linear(to-bl, whiteAlpha.900, whiteAlpha.800)" // Subtle gradient to improve contrast
+            border="1px solid" // Adding a border
+            borderColor="primary" // Using primary color for the border
+            _hover={{
+                transform: 'scale(1.05)',
+                transition: 'all 0.3s ease',
+                boxShadow: '2xl'
+            }}
+        >
+            <CardBody>
+                <Box display="flex" alignItems="center">
+                    
+                    <Heading size="md" color="text">{title}</Heading>
+                    
                 </Box>
-                
-                <Text mt={4}>{name}</Text>
-                <Text mt={2}>{date}</Text>
 
+                <Text mt={2} fontSize="md" color="primary">{name}</Text>
+                <Text fontSize="sm" color="primary">{date}</Text>
             </CardBody>
         </Card>
-    )
+    );
 }
 
 export default EducationCard;

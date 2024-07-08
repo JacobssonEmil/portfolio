@@ -16,34 +16,30 @@ import { FaCode } from 'react-icons/fa';
 
 
 function Project() {
-
-
     return [
         <Container maxWidth="1200px" marginTop="190px">
-
-            <Heading size="lg" color={'#EEEEEE'}>
+            <Heading size="lg" color="text"> {/* Use global text color */}
                 <chakra.span
-                    borderBottom="3px solid #00ADB5"
+                    borderBottom="3px solid" 
+                    borderColor={'accent'}
                     display="inline-block"
                     paddingBottom="4px">
                     <Flex>
                         <Box mt={1}>
-                            <FaCode color="#EEEEEE" />
+                            <FaCode color="text" /> {/* Use global text color */}
                         </Box>
-                        <Text ml={2}>Projects</Text>
+                        <Text ml={2} color="text">Projects</Text> {/* Use global text color */}
                     </Flex>
                 </chakra.span>
             </Heading>
 
             <Flex direction="row" wrap="wrap" justifyContent="center">
                 <ProjectCardSmartHouse />
-                <Center marginRight={{ base: "0", md:"59"}} marginLeft={{ base: "0", md:"59"}}>
+                <Center marginRight={{ base: "0", md: "59"}} marginLeft={{ base: "0", md: "59"}}>
                     <ProjectCardMedlemma />
                 </Center>
                 <ProjectCardPortfolio />
             </Flex>
-
-
         </Container>
     ];
 }

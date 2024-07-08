@@ -17,53 +17,46 @@ import { useEffect, useState } from 'react';
 
 function ProjectCardPortfolio() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjusted to a common mobile breakpoint
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // Updated to a common mobile breakpoint
+            setIsMobile(window.innerWidth <= 768);
         };
 
         window.addEventListener('resize', handleResize);
-        // Clean up the event listener when the component unmounts
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     return (
         <>
             <Card
-            maxW='sm'
-            boxShadow='dark-lg'
-            rounded='lg'
-            mt={50}
-            overflow="hidden"
-            bgGradient='linear(to-b, #393E46, #222831)'
-            color='#EEEEEE'
-            height={350}
-            maxWidth={350}
-            display='flex'
-            flexDirection='column'
-            _hover={isMobile ? {} : {
-                transform: 'scale(1.05)',
-                transition: 'transform 0.3s ease-in-out',
-            }}
-            sx={{
-                '@media screen and (max-width: 1050px)': {
+                maxW='sm'
+                boxShadow='dark-lg'
+                rounded='lg'
+                mt={50}
+                overflow="hidden"
+                bgColor='background' // Solid background color for cleanliness
+                color='text' // Text color from global settings
+                height={350}
+                maxWidth={350}
+                display='flex'
+                flexDirection='column'
+                _hover={isMobile ? {} : {
                     transform: 'scale(1.05)',
-            transition: 'transform 0.3s ease-in-out',
-                }
-            }}
-        >
+                    transition: 'transform 0.3s ease-in-out',
+                }}
+            >
                 <Image
                     src='/images/Portfolio.png'
-                    alt='Smart House'
+                    alt='Portfolio Image'
                     objectFit='cover'
                     height={175}
                     maxWidth={350}
                 />
                 <Stack mt='0' spacing='3' p={5} height={120} overflow='hidden'>
                     <Heading size='md' onClick={onOpen} cursor='pointer' _hover={{
-                        color: '#00ADB5'
+                        color: 'accent' // Hover color from global settings
                     }}>
                         Portfolio
                     </Heading>
@@ -81,11 +74,10 @@ function ProjectCardPortfolio() {
                                 <Button
                                     leftIcon={<FaGithub />}
                                     variant='outline'
-                                    color='#EEEEEE'
+                                    color='text' // Ensures the button text is consistent
                                     size='sm'
                                     _hover={{
-
-                                        borderColor: '#00ADB5' // subtle border color change
+                                        borderColor: 'accent' // Hover state color from global settings
                                     }}
                                 >
                                     GitHub
@@ -94,18 +86,16 @@ function ProjectCardPortfolio() {
                         </ButtonGroup>
                         <ButtonGroup spacing='2' justifySelf="flex-end">
                             <Button
-                                className='btnWiggle'
                                 onClick={onOpen}
                                 size='sm'
-                                bgGradient='linear(to-r, #6EE7B7, #00ADB5, #3B82F6)'
-                                color={'#222831'}
+                                bgColor='primary' // Background color from global settings
+                                color='text' // Text color from global settings
                                 _hover={{
-                                    bgGradient: 'linear(to-r, #6EE7B7, #00ADB5, #78A0CC)'  // Subtly adjusted ending color
+                                    bgColor: 'secondary' // Hover background color from global settings
                                 }}
                             >
                                 More Info
                             </Button>
-
                         </ButtonGroup>
                     </Flex>
                 </CardFooter>

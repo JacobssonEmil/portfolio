@@ -18,43 +18,36 @@ import { useEffect, useState } from 'react';
 function ProjectCardMedlemma() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjusted to a common mobile breakpoint
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // Updated to a common mobile breakpoint
+            setIsMobile(window.innerWidth <= 768);
         };
 
         window.addEventListener('resize', handleResize);
-        // Clean up the event listener when the component unmounts
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     return (
         <>
             <Card
-            maxW='sm'
-            boxShadow='dark-lg'
-            rounded='lg'
-            mt={50}
-            overflow="hidden"
-            bgGradient='linear(to-b, #393E46, #222831)'
-            color='#EEEEEE'
-            height={350}
-            maxWidth={350}
-            display='flex'
-            flexDirection='column'
-            _hover={isMobile ? {} : {
-                transform: 'scale(1.05)',
-                transition: 'transform 0.3s ease-in-out',
-            }}
-            sx={{
-                '@media screen and (max-width: 1050px)': {
+                maxW='sm'
+                boxShadow='dark-lg'
+                rounded='lg'
+                mt={50}
+                overflow="hidden"
+                bgColor='background' // Use solid background color for a cleaner look
+                color='text' // Using global text color
+                height={350}
+                maxWidth={350}
+                display='flex'
+                flexDirection='column'
+                _hover={isMobile ? {} : {
                     transform: 'scale(1.05)',
-            transition: 'transform 0.3s ease-in-out',
-                }
-            }}
-        >
+                    transition: 'transform 0.3s ease-in-out',
+                }}
+            >
                 <Image
                     src='/images/Android.jpg'
                     alt='Smart House'
@@ -64,7 +57,7 @@ function ProjectCardMedlemma() {
                 />
                 <Stack mt='0' spacing='3' p={5} height={120} overflow='hidden'>
                     <Heading size='md' onClick={onOpen} cursor='pointer' _hover={{
-                        color: '#00ADB5'
+                        color: 'accent' // Use accent color for hover on heading
                     }}>
                         Medlemma
                     </Heading>
@@ -82,11 +75,10 @@ function ProjectCardMedlemma() {
                                 <Button
                                     leftIcon={<FaGithub />}
                                     variant='outline'
-                                    color='#EEEEEE'
+                                    color='text' // Button text uses global text color
                                     size='sm'
                                     _hover={{
-
-                                        borderColor: '#00ADB5' // subtle border color change
+                                        borderColor: 'accent' // Hover state uses global accent color
                                     }}
                                 >
                                     GitHub
@@ -95,18 +87,16 @@ function ProjectCardMedlemma() {
                         </ButtonGroup>
                         <ButtonGroup spacing='2' justifySelf="flex-end">
                             <Button
-                                className='btnWiggle'
                                 onClick={onOpen}
                                 size='sm'
-                                bgGradient='linear(to-r, #6EE7B7, #00ADB5, #3B82F6)'
-                                color={'#222831'}
+                                bgColor='primary' // Use primary color for button
+                                color='text' // Button text uses global text color
                                 _hover={{
-                                    bgGradient: 'linear(to-r, #6EE7B7, #00ADB5, #78A0CC)'  // Subtly adjusted ending color
+                                    bgColor: 'secondary' // Hover state uses secondary color
                                 }}
                             >
                                 More Info
                             </Button>
-
                         </ButtonGroup>
                     </Flex>
                 </CardFooter>
