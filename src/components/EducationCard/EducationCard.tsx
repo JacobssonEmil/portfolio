@@ -1,5 +1,4 @@
 import { Card, CardBody, Heading, Text, Box } from "@chakra-ui/react";
-import { GiGraduateCap } from "react-icons/gi";
 
 interface EducationCardProps {
     title: string;
