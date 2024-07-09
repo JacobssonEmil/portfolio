@@ -1,4 +1,3 @@
-import React from 'react';
 import { Menu, MenuButton, MenuList, MenuItem, Image, Box, Flex, Text } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
