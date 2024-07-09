@@ -37,7 +37,7 @@ function EducationCard() {
   const isDesktop = useBreakpointValue({ base: false, md: true });
 
   return (
-    <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
+    <Container maxWidth="1200px" p={{ base: 2, sm: 10 }}>
       {milestones.map((milestone) => (
         <Flex key={milestone.id} mb="10px">
           {/* Desktop view(left card) */}
@@ -100,7 +100,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
       rounded="lg"
       alignItems="center"
       pos="relative"
-      boxShadow="lg"
+      boxShadow="base"
       _before={{
         content: `""`,
         w: '0',

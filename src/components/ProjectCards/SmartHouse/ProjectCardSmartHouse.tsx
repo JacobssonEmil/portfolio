@@ -32,7 +32,7 @@ function ProjectCardSmartHouse() {
         <>
             <Card
                 maxW='sm'
-                boxShadow='dark-lg'
+                boxShadow='base'
                 rounded='lg'
                 mt={50}
                 overflow="hidden"

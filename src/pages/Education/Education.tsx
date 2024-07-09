@@ -19,23 +19,7 @@ function Education() {
                     </chakra.span>
                 </Heading>
             </Box>
-            {/** 
-            <Flex 
-                direction={{ base: "column", lg: "row" }}
-                wrap="wrap"
-                justifyContent={{ base: "center", md: "space-between" }}
-                mt={4}
-                alignItems="center" 
-            >
-                <Box mb={10}>
-                    <EducationCard title='Bachelor Program in Software
-                    Development' name='Högskolan Kristianstad, Kristianstad' date='Aug 2021 - Jun 2024'/>
-                    <EducationCard title='Technology Program' name='NTI Gymnasiet, Helsingborg' date='Aug 2017 - Jun 2020'/>
-                </Box>
-
-                <Image src='/images/HandCoding.gif' alt='Education' maxBlockSize="450px" objectFit="cover" alignSelf="center"/>
-            </Flex>
-            */}
+            
             <EducationCard/>
 
         </Container>
