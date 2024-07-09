@@ -6,7 +6,7 @@ function About() {
     return (
         <Container maxWidth="600px" marginTop="200px" color="text">
             <Box textAlign="center">
-                <Heading size="2xl" color="primary" mb={4}>Emil J.</Heading>
+                <Heading size="2xl" color="text" mb={4}>Emil J.</Heading>
                 <Text fontSize="xl" mb={6}>
                     {"I am a passionate fullstack developer from Sweden, who enjoys creating responsive and user-friendly applications. Always eager to learn new technologies and apply them in projects."}
                 </Text>

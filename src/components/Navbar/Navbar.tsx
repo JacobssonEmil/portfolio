@@ -1,5 +1,5 @@
 // src/components/Navbar/Navbar.tsx
-import { Box, Flex, Text, IconButton, HStack, Stack, useDisclosure,  Container, Avatar, Menu, MenuButton, MenuItem, MenuList, Link, Divider } from '@chakra-ui/react';
+import { Box, Flex, Text, IconButton, HStack, Stack, useDisclosure,  Container, Avatar, Menu, MenuButton, MenuItem, MenuList, Link } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, EmailIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
