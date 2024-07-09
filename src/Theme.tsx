@@ -1,5 +1,5 @@
-// theme.js
 import { extendTheme } from '@chakra-ui/react';
+
 
 const customTheme = extendTheme({
   colors: {
@@ -11,14 +11,14 @@ const customTheme = extendTheme({
   },
   styles: {
     global: {
-      body: {
-        bg: '#fcfdfd', // background
-        color: '#111313', // text
+      'html, body': {
+        bg: '#fcfdfd', // Background color
+        color: '#111313', // Text color
       },
       a: {
-        color: '#7a8e99', // primary
+        color: '#7a8e99', // Primary color for links
         _hover: {
-          color: '#8fabb7', // accent
+          color: '#8fabb7', // Accent color on hover
         },
       },
     },

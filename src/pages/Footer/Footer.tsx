@@ -4,7 +4,7 @@ import { EmailIcon } from '@chakra-ui/icons';
 
 const Footer = () => {
   return (
-    <Box bg="background" color='text'> {/* Consistent background and text color */}
+    <Box color='text'> {/* Consistent background and text color */}
       <Container as={Stack} maxW='1200px' py={10} mt={150} align="center">
         <VStack spacing={4}>
           <Wrap justify="center" spacingX="40px">
