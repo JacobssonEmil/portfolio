@@ -120,12 +120,13 @@ const Card = ({ id, title, description, date }: CardProps) => {
           {date}
         </Text>
 
-        <VStack spacing={2} mb={3} textAlign="left">
-          <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%" color={colors.text}>
-            {title}
-          </chakra.h1>
-          <Text fontSize="md" color={colors.primary}>{description}</Text>
-        </VStack>
+        <VStack spacing={2} mb={3} align="left">
+  <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%" color={colors.text}>
+    {title}
+  </chakra.h1>
+  <Text fontSize="md" color={colors.primary} textAlign="left">{description}</Text>
+</VStack>
+
       </Box>
     </HStack>
   );
