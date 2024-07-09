@@ -64,22 +64,22 @@ const Navbar = () => {
               <Avatar size='sm' name='Emil Jacobsson' src='/images/Profilbild.jpeg' />
               <ChevronDownIcon boxSize={6}></ChevronDownIcon>
             </MenuButton>
-            <MenuList>
+            <MenuList color='text' bg={'background'}>
               <Link href='https://www.linkedin.com/in/emiljacobsson/' isExternal _hover={{
                 textDecoration: 'underline',
                 textDecorationColor: 'accent',
                 textDecorationThickness: '2px'
-              }}><MenuItem><Flex marginEnd={2}><FaLinkedin color='#0A66C2' /></Flex><Text>Linkedin</Text></MenuItem></Link>
+              }}><MenuItem bg={'background'}><Flex marginEnd={2}><FaLinkedin color='#0A66C2' /></Flex><Text>Linkedin</Text></MenuItem></Link>
               <Link href='https://github.com/JacobssonEmil' isExternal _hover={{
                 textDecoration: 'underline',
                 textDecorationColor: 'accent',
                 textDecorationThickness: '2px'
-              }}><MenuItem><Flex marginEnd={2}><FaGithub color='#181717' /></Flex><Text>Github</Text></MenuItem></Link>
+              }}><MenuItem bg={'background'}><Flex marginEnd={2}><FaGithub color='#181717' /></Flex><Text>Github</Text></MenuItem></Link>
               <Link href="mailto:emil@jacobsson.com" isExternal _hover={{
                 textDecoration: 'underline',
                 textDecorationColor: 'accent',
                 textDecorationThickness: '2px'
-              }}><MenuItem><EmailIcon marginTop={1} marginEnd={2} color='text' /><Text>Email</Text></MenuItem></Link>
+              }}><MenuItem bg={'background'}><EmailIcon marginTop={1} marginEnd={2} color='text' /><Text>Email</Text></MenuItem></Link>
             </MenuList>
           </Menu>
         </Flex>
