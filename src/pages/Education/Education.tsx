@@ -5,7 +5,7 @@ import { FaGraduationCap } from 'react-icons/fa';
 function Education() {
     return (
         <Container maxWidth="1200px" marginTop="200px">
-            <Box>
+            <Box mb={50}>
                 <Heading size="lg" color='text'> {/* Updated to global text color */}
                     <chakra.span
                         borderBottom="3px solid" 
@@ -19,7 +19,7 @@ function Education() {
                     </chakra.span>
                 </Heading>
             </Box>
-
+            {/** 
             <Flex 
                 direction={{ base: "column", lg: "row" }}
                 wrap="wrap"
@@ -35,6 +35,8 @@ function Education() {
 
                 <Image src='/images/HandCoding.gif' alt='Education' maxBlockSize="450px" objectFit="cover" alignSelf="center"/>
             </Flex>
+            */}
+            <EducationCard/>
 
         </Container>
     );
