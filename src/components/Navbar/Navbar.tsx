@@ -68,7 +68,7 @@ const Navbar = () => {
           <Menu>
             <MenuButton>
               <Avatar size='sm' name='Emil Jacobsson' src='/images/Profilbild.jpeg' />
-              <ChevronDownIcon boxSize={6}></ChevronDownIcon>
+              <ChevronDownIcon boxSize={6} mt={1}></ChevronDownIcon>
             </MenuButton>
             <MenuList color='text' bg={'background'}>
               {/* Link entries updated to use translation */}
