@@ -29,7 +29,7 @@ const Navbar = () => {
     <><Container
       borderBottom="1px solid" 
       borderColor={'primary'}
-      maxWidth={'100%'}
+      maxWidth={'1400px'}
       color='text'
       position="fixed" // Make navbar fixed at the top
       top="0" // Align to the top of the viewport
