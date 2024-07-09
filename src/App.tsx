@@ -19,6 +19,7 @@ const App = () => {
         {/* Embed the About component */}
         <About />
       </Box>
+      
       <Box id="education">
         {/* Embed the Education component */}
         <Education />

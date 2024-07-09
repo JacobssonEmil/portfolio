@@ -6,7 +6,8 @@ import {
   HStack,
   VStack,
   Flex,
-  useBreakpointValue
+  useBreakpointValue,
+  Heading
 } from '@chakra-ui/react';
 
 const colors = {
@@ -37,10 +38,16 @@ function EducationCard() {
   const isDesktop = useBreakpointValue({ base: false, md: true });
 
   return (
-    <Container maxWidth="1200px" p={{ base: 2, sm: 10 }}>
+    <Container maxWidth="1200px" p={0} m="0 auto" // Remove padding and set margin auto for center alignment
+      sx={{
+        width: '100%', // Ensures the container tries to use the full width available
+        maxW: '1200px' // Ensures the container does not exceed 1200px
+      }}
+    >
       {milestones.map((milestone) => (
-        <Flex key={milestone.id} mb="10px">
-          {/* Desktop view(left card) */}
+        <Flex key={milestone.id} mb="10px" w="full" // Ensure each Flex uses the full width
+        >
+          {/* Conditional rendering based on the device type */}
           {isDesktop && milestone.id % 2 === 0 && (
             <>
               <EmptyCard />
@@ -49,7 +56,6 @@ function EducationCard() {
             </>
           )}
 
-          {/* Mobile view */}
           {isMobile && (
             <>
               <LineWithDot />
@@ -57,7 +63,6 @@ function EducationCard() {
             </>
           )}
 
-          {/* Desktop view(right card) */}
           {isDesktop && milestone.id % 2 !== 0 && (
             <>
               <Card {...milestone} />
@@ -120,9 +125,9 @@ const Card = ({ id, title, description, date }: CardProps) => {
         </Text>
 
         <VStack spacing={2} mb={3} align="left">
-  <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%" color={colors.text}>
+  <Heading  size='md'  lineHeight={1.2} fontWeight="bold" w="100%" color={colors.text}>
     {title}
-  </chakra.h1>
+  </Heading>
   <Text fontSize="md" color={colors.primary} textAlign="left">{description}</Text>
 </VStack>
 
