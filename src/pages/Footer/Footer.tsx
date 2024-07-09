@@ -7,21 +7,8 @@ const Footer = () => {
     <Box color='text'> {/* Consistent background and text color */}
       <Container as={Stack} maxW='1200px' py={10} mt={150} align="center">
         <VStack spacing={4}>
-          <Wrap justify="center" spacingX="40px">
-            <WrapItem>
-              <Link href="#about" _hover={{ color: 'accent', textDecoration: 'underline' }}>About</Link>
-            </WrapItem>
-            <WrapItem>
-              <Link href="#education" _hover={{ color: 'accent', textDecoration: 'underline' }}>Education</Link>
-            </WrapItem>
-            <WrapItem>
-              <Link href="#projects" _hover={{ color: 'accent', textDecoration: 'underline' }}>Projects</Link>
-            </WrapItem>
-            <WrapItem>
-              <Link href="#skills" _hover={{ color: 'accent', textDecoration: 'underline' }}>Technologies and Tools</Link>
-            </WrapItem>
-          </Wrap>
-          <Text mt={5}>Contact me directly at: <Link href="mailto:emil@jacobsson.com" _hover={{ color: 'accent', textDecoration: 'underline' }}>emil@jacobsson.com</Link></Text>
+          
+          
           <HStack spacing={8}>
             <Link href="https://github.com/JacobssonEmil" isExternal>
               <Icon as={FaGithub} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
@@ -36,8 +23,9 @@ const Footer = () => {
               <Icon as={FaPhone} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
             </Link>
           </HStack>
+          <Text mt={0}>Contact me directly at: <Link href="mailto:emil@jacobsson.com" _hover={{ color: 'accent', textDecoration: 'underline' }}>emil@jacobsson.com</Link></Text>
         </VStack>
-        <Box pt={5}>
+        <Box>
           <Text fontSize='sm' color='secondary'>
             © 2024 by Emil Jacobsson. All rights reserved.
           </Text>
