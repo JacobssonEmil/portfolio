@@ -89,7 +89,7 @@ function ProjectCardPortfolio() {
                                 onClick={onOpen}
                                 size='sm'
                                 bgColor='primary' // Background color from global settings
-                                color='text' // Text color from global settings
+                                color='background' // Text color from global settings
                                 _hover={{
                                     bgColor: 'secondary' // Hover background color from global settings
                                 }}

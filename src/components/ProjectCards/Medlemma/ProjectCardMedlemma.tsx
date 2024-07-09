@@ -90,7 +90,7 @@ function ProjectCardMedlemma() {
                                 onClick={onOpen}
                                 size='sm'
                                 bgColor='primary' // Use primary color for button
-                                color='text' // Button text uses global text color
+                                color='background' // Button text uses global text color
                                 _hover={{
                                     bgColor: 'secondary' // Hover state uses secondary color
                                 }}

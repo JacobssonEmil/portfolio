@@ -1,39 +1,34 @@
-// src/App.tsx
 import { Box } from '@chakra-ui/react';
 import Navbar from './components/Navbar/Navbar';
 import About from './pages/About/About';
 import Education from './pages/Education/Education';
 import Projects from './pages/Projects/Projects';
 import Skills from './pages/Skills/Skills';
-
-import ScrollIndicator from './components/ScrollArrow/ScrollArrow'
 import Footer from './pages/Footer/Footer';
+import ScrollIndicator from './components/ScrollArrow/ScrollArrow';
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
-    
     <Box>
       <ScrollIndicator/>
       <Navbar />
-      <Box id="about" >
-        {/* Embed the About component */}
+      <Box id="about" pt="20px" mt="-20px"> {/* Adding padding and negative margin to compensate for navbar height */}
         <About />
       </Box>
       
-      <Box id="education">
-        {/* Embed the Education component */}
+      <Box id="education" pt="20px" mt="-20px">
         <Education />
       </Box>
-      <Box id="projects">
-        {/* Embed the Projects component */}
+
+      <Box id="projects" pt="20px" mt="-20px">
         <Projects />
       </Box>
-      <Box id="skills">
-        {/* Embed the Projects component */}
+
+      <Box id="skills" pt="20px" mt="-20px">
         <Skills />
       </Box>
-      <Box id="footer">
-        {/* Embed the Projects component */}
+
+      <Box id="footer" pt="20px" mt="-20px">
         <Footer />
       </Box>
     </Box>
