@@ -1,14 +1,15 @@
-import { Box, Container, Stack, Text, Icon, Link, VStack, HStack} from '@chakra-ui/react';
+import { Box, Container, Stack, Text, Icon, Link, VStack, HStack } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
 import { EmailIcon } from '@chakra-ui/icons';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <Box color='text'> {/* Consistent background and text color */}
+    <Box color='text'>
       <Container as={Stack} maxW='1200px' py={10} mt={150} align="center">
         <VStack spacing={4}>
-          
-          
           <HStack spacing={8}>
             <Link href="https://github.com/JacobssonEmil" isExternal>
               <Icon as={FaGithub} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
@@ -23,11 +24,11 @@ const Footer = () => {
               <Icon as={FaPhone} boxSize={7} color='primary' _hover={{ color: 'accent', transform: 'scale(1.1)' }} />
             </Link>
           </HStack>
-          <Text mt={0}>Contact me directly at: <Link href="mailto:emil@jacobsson.com" _hover={{ color: 'accent', textDecoration: 'underline' }}>emil@jacobsson.com</Link></Text>
+          <Text mt={0}>{t('Contact me directly at')}: <Link href="mailto:emil@jacobsson.com" _hover={{ color: 'accent', textDecoration: 'underline' }}>emil@jacobsson.com</Link></Text>
         </VStack>
         <Box>
           <Text fontSize='sm' color='secondary'>
-            © 2024 by Emil Jacobsson. All rights reserved.
+            © 2024 by Emil Jacobsson. {t('All rights reserved')}
           </Text>
         </Box>
       </Container>

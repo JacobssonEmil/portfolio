@@ -12,10 +12,12 @@ import ProjectCardMedlemma from '../../components/ProjectCards/Medlemma/ProjectC
 import ProjectCardSmartHouse from '../../components/ProjectCards/SmartHouse/ProjectCardSmartHouse';
 import ProjectCardPortfolio from '../../components/ProjectCards/Portfolio/ProjectCardPortfolio';
 import { FaCode } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 
 
 function Project() {
+    const { t } = useTranslation();
     return [
         <Container maxWidth="1200px" marginTop="190px">
             <Heading size="lg" color="text"> {/* Use global text color */}
@@ -28,7 +30,7 @@ function Project() {
                         <Box mt={1}>
                             <FaCode color="text" /> {/* Use global text color */}
                         </Box>
-                        <Text ml={2} color="text">Projects</Text> {/* Use global text color */}
+                        <Text ml={2} color="text">{t('Projects Title')}</Text> {/* Use global text color */}
                     </Flex>
                 </chakra.span>
             </Heading>

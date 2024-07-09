@@ -1,10 +1,11 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { ChakraProvider } from '@chakra-ui/react';
-import App from './App'; // Ensure that App is properly imported
+import App from './App';
+import customTheme from './Theme';
+import initI18n from './i18next';
 
-import customTheme from './Theme.tsx';
-
+initI18n();
 
 ReactDOM.render(
   <React.StrictMode>

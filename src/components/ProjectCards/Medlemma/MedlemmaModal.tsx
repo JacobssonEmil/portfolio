@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -14,45 +15,44 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
-interface SmartHouseoModalProps {
+interface MedlemmaModalProps {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
 }
 
-const MedlemmaModal: React.FC<SmartHouseoModalProps> = ({ isOpen, onClose }) => {
+const MedlemmaModal: React.FC<MedlemmaModalProps> = ({ isOpen, onClose }) => {
+  const { t } = useTranslation();
+
   return (
-    <>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent bgColor='background' color='text' mr={2} ml={2}>
-          <ModalHeader>Medlemma</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Text>
-            An app for managing your store memberships. With this app, users can easily collect, organize, and manage all their memberships in various stores efficiently. Users can also smoothly display their membership cards directly from their mobile when needed.</Text>
-            <Stack marginTop="4" direction="row" wrap="wrap" spacing={2}>
-              <Badge colorScheme="purple">Kotlin</Badge>
-              <Badge colorScheme="blue">Jetpack Compose</Badge>
-              <Badge colorScheme="red">Andriod Studio</Badge>
-              <Badge colorScheme="pink">Firebase</Badge>
-            </Stack>
-          </ModalBody>
-  
-          <ModalFooter>
-            <ButtonGroup spacing="2">
-              <Link href='https://github.com/Stuhren/Medlemma' isExternal>
-                <Flex align="center">
-                  <FaGithub size="30"/>
-                  <Text marginLeft="2">Github</Text>
-                </Flex>
-              </Link>
-            </ButtonGroup>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-    </>
+    <Modal isOpen={isOpen} onClose={onClose}>
+      <ModalOverlay />
+      <ModalContent bgColor='background' color='text' mr={2} ml={2}>
+        <ModalHeader>{t('Medlemma Modal Title')}</ModalHeader>
+        <ModalCloseButton />
+        <ModalBody>
+          <Text>{t('Medlemma Modal Description')}</Text>
+          <Stack marginTop="4" direction="row" wrap="wrap" spacing={2}>
+            <Badge colorScheme="purple">Kotlin</Badge>
+            <Badge colorScheme="blue">Jetpack Compose</Badge>
+            <Badge colorScheme="red">Android Studio</Badge>
+            <Badge colorScheme="pink">Firebase</Badge>
+          </Stack>
+        </ModalBody>
+        <ModalFooter>
+          <ButtonGroup spacing="2">
+            <Link href='https://github.com/Stuhren/Medlemma' isExternal>
+              <Flex align="center">
+                <FaGithub size="30"/>
+                <Text marginLeft="2">{t('Github')}</Text>
+              </Flex>
+            </Link>
+          </ButtonGroup>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   );
 }
 

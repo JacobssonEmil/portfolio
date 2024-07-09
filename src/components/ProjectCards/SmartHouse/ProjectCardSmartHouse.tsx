@@ -14,10 +14,12 @@ import {
 import { FaGithub } from 'react-icons/fa';
 import SmartHouseModal from './SmartHouseModal';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function ProjectCardSmartHouse() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const { t } = useTranslation();
 
     useEffect(() => {
         const handleResize = () => {
@@ -58,10 +60,10 @@ function ProjectCardSmartHouse() {
                     <Heading size='md' onClick={onOpen} cursor='pointer' _hover={{
                         color: 'accent' // Hover color from global settings
                     }}>
-                        Smart Home
+                        {t('Smart Home Title')}
                     </Heading>
                     <Text>
-                        A website and mobile app for remotely controlling devices in a prototype house.
+                        {t('Smart Home Description')}
                     </Text>
                 </Stack>
 

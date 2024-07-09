@@ -17,23 +17,25 @@ const colors = {
   secondary: '#a8bac2',
   accent: '#8fabb7',
 };
+import { useTranslation } from 'react-i18next';
 
-const milestones = [
+
+function EducationCard() {
+  const { t } = useTranslation();
+  const milestones = [
   {
     id: 1,
     date: 'Aug 2021 - Jun 2024',
-    title: 'Bachelor Program in Software Development',
-    description: `Högskolan Kristianstad, Kristianstad`
+    title: t('Bachelor Program in Software Development'),
+    description: t('University Kristianstad')
   },
   {
     id: 2,
     date: 'Aug 2017 - Jun 2020',
-    title: 'Technology Program',
-    description: 'NTI Gymnasiet, Helsingborg'
+    title: t('Technology Program'),
+    description: t('NTI High School')
   }
 ];
-
-function EducationCard() {
   const isMobile = useBreakpointValue({ base: true, md: false });
   const isDesktop = useBreakpointValue({ base: false, md: true });
 

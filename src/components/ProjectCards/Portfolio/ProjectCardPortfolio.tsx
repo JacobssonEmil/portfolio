@@ -14,10 +14,13 @@ import {
 import { FaGithub } from 'react-icons/fa';
 import PortfolioModal from './PortfolioModal';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function ProjectCardPortfolio() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const { t } = useTranslation();
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -58,10 +61,10 @@ function ProjectCardPortfolio() {
                     <Heading size='md' onClick={onOpen} cursor='pointer' _hover={{
                         color: 'accent' // Hover color from global settings
                     }}>
-                        Portfolio
+                        {t('Portfolio Title')}
                     </Heading>
                     <Text>
-                        A portfolio website designed to showcase my projects.
+                    {t('Portfolio Description')}
                     </Text>
                 </Stack>
 

@@ -1,11 +1,14 @@
 import { Box, Container, Flex, Heading, chakra, Text, Image } from '@chakra-ui/react';
 import Technologies from '../../components/TechIcons/TechIcons';
 import { FaScrewdriverWrench } from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
-    return [
+    const { t } = useTranslation();
+
+    return (
         <Container maxWidth="1200px" marginTop="200px">
-            <Heading size="lg" color='text'> {/* Updated text color */}
+            <Heading size="lg" color='text'>
                 <chakra.span
                     borderBottom="3px solid"
                     borderColor={'accent'}
@@ -13,8 +16,8 @@ function Skills() {
                     paddingBottom="4px"
                 >
                     <Flex>
-                        <Box mt={1}><FaScrewdriverWrench color="text" /></Box> {/* Updated icon color */}
-                        <Text ml={2} color="text">Technologies and Tools</Text> {/* Updated text color */}
+                        <Box mt={1}><FaScrewdriverWrench color="text" /></Box>
+                        <Text ml={2} color="text">{t('Technologies and Tools Title')}</Text>
                     </Flex>
                 </chakra.span>
             </Heading>
@@ -27,15 +30,15 @@ function Skills() {
                 alignItems="center"
             >
                 <Image mt={10} mb={10} src='/images/Skills.gif' alt='Skills' maxBlockSize="400px" objectFit="cover" />
-                <Box color='text' textAlign={'center'} mt={{ base: 0, md: 10 }}> {/* Updated text color */}
-                    <Technologies/>
-                    <Text mt={10}>⭐ Building responsive web applications (SPA) in React.js.</Text>
-                    <Text>⭐ Building mobile applications in Kotlin and Jetpack Compose.</Text>
-                    <Text>⭐ Building APIs in JavaScript and Node.js.</Text>
+                <Box color='text' textAlign={'center'} mt={{ base: 0, md: 10 }}>
+                    <Technologies />
+                    <Text mt={10}>{t('Skills 1')}</Text>
+                    <Text>{t('Skills 2')}</Text>
+                    <Text>{t('Skills 3')}</Text>
                 </Box>
             </Flex>
         </Container>
-    ];
+    );
 }
 
 export default Skills;
