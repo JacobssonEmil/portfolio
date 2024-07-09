@@ -29,7 +29,7 @@ const LanguageSwitcher = () => {
                 textDecorationThickness: '2px'
                 }}>
             <Box as="span" display="flex" alignItems="center">
-            <Image boxSize={5} src={getFlagByLang(currentLanguage)} mr={1} mt={[0, 1]}  />
+            <Image boxSize={5} src={getFlagByLang(currentLanguage)} alt='Current Language' mr={1} mt={[0, 1]}  />
             Language
               <ChevronDownIcon boxSize={6}></ChevronDownIcon>
               </Box>
