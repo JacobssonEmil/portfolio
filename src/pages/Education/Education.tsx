@@ -1,4 +1,4 @@
-import { Box, Flex, Container, Heading, chakra, Text, Image } from '@chakra-ui/react';
+import { Box, Flex, Container, Heading, chakra, Text } from '@chakra-ui/react';
 import EducationCard from '../../components/EducationCard/EducationCard';
 import { FaGraduationCap } from 'react-icons/fa';
 
