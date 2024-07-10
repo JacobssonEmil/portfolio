@@ -77,7 +77,7 @@ const initI18n = () => {
             // Education Page
             "Education Title": "Utbildning",
             "Bachelor Program in Software Development": "Kandidatexamen i datavetenskap",
-            "Technology Program": "Teknik Programmet",
+            "Technology Program": "Teknikprogrammet",
             "University Kristianstad": "Högskolan Kristianstad, Kristianstad",
             "NTI High School": "NTI Gymnasiet, Helsingborg",
             // Project Page
