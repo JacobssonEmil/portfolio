@@ -10,13 +10,6 @@ import {
   Heading
 } from '@chakra-ui/react';
 
-const colors = {
-  text: '#111313',
-  background: '#fcfdfd',
-  primary: '#7a8e99',
-  secondary: '#a8bac2',
-  accent: '#8fabb7',
-};
 import { useTranslation } from 'react-i18next';
 
 
@@ -102,7 +95,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
     <HStack
       flex={1}
       p={{ base: 3, sm: 6 }}
-      bg={colors.background}
+      bg={'background'}
       spacing={5}
       rounded="lg"
       alignItems="center"
@@ -112,7 +105,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
         content: `""`,
         w: '0',
         h: '0',
-        borderColor: `transparent ${colors.background} transparent`,
+        borderColor: `transparent ${'background'} transparent`,
         borderStyle: 'solid',
         borderWidth: borderWidthValue,
         position: 'absolute',
@@ -122,15 +115,15 @@ const Card = ({ id, title, description, date }: CardProps) => {
       }}
     >
       <Box>
-        <Text fontSize="lg" color={colors.primary}>
+        <Text fontSize="lg" color={'primary'}>
           {date}
         </Text>
 
         <VStack spacing={2} mb={3} align="left">
-  <Heading  size='md'  lineHeight={1.2} fontWeight="bold" w="100%" color={colors.text}>
+  <Heading  size='md'  lineHeight={1.2} fontWeight="bold" w="100%" color={'text'}>
     {title}
   </Heading>
-  <Text fontSize="md" color={colors.primary} textAlign="left">{description}</Text>
+  <Text fontSize="md" color={'primary'} textAlign="left">{description}</Text>
 </VStack>
 
       </Box>
@@ -151,7 +144,7 @@ const LineWithDot = () => {
         left="50%"
         height="calc(100% + 10px)"
         border="1px solid"
-        borderColor={colors.primary}
+        borderColor={'primary'}
         top="0px"
       ></chakra.span>
       <Box pos="relative" p="10px">
@@ -166,7 +159,7 @@ const LineWithDot = () => {
           backgroundSize="cover"
           backgroundRepeat="no-repeat"
           backgroundPosition="center center"
-          bg={colors.primary}
+          bg={'primary'}
           borderRadius="100px"
           backgroundImage="none"
           opacity={1}
