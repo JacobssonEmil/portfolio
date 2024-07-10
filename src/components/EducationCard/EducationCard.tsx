@@ -12,23 +12,22 @@ import {
 
 import { useTranslation } from 'react-i18next';
 
-
 function EducationCard() {
   const { t } = useTranslation();
   const milestones = [
-  {
-    id: 1,
-    date: 'Aug 2021 - Jun 2024',
-    title: t('Bachelor Program in Software Development'),
-    description: t('University Kristianstad')
-  },
-  {
-    id: 2,
-    date: 'Aug 2017 - Jun 2020',
-    title: t('Technology Program'),
-    description: t('NTI High School')
-  }
-];
+    {
+      id: 1,
+      date: 'Aug 2021 - Jun 2024',
+      title: t('Bachelor Program in Software Development'),
+      description: t('University Kristianstad')
+    },
+    {
+      id: 2,
+      date: 'Aug 2017 - Jun 2020',
+      title: t('Technology Program'),
+      description: t('NTI High School')
+    }
+  ];
   const isMobile = useBreakpointValue({ base: true, md: false });
   const isDesktop = useBreakpointValue({ base: false, md: true });
 
@@ -82,10 +81,8 @@ const Card = ({ id, title, description, date }: CardProps) => {
   const isEvenId = id % 2 === 0;
   let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px';
 
-
   const isMobile = useBreakpointValue({ base: true, md: false });
   if (isMobile) {
-
     borderWidthValue = '15px 15px 15px 0';
   }
 
@@ -99,7 +96,9 @@ const Card = ({ id, title, description, date }: CardProps) => {
       alignItems="center"
       pos="relative"
       boxShadow="base"
-      
+      sx={{
+        borderLeftWidth: borderWidthValue
+      }}
     >
       <Box>
         <Text fontSize="lg" color={'text'}>
@@ -107,11 +106,11 @@ const Card = ({ id, title, description, date }: CardProps) => {
         </Text>
 
         <VStack spacing={2} mb={3} align="left">
-  <Heading  size='md'  lineHeight={1.2} fontWeight="bold" w="100%" color={'text'}>
-    {title}
-  </Heading>
-  <Text fontSize="md" color={'text'} textAlign="left">{description}</Text>
-</VStack>
+          <Heading size='md' lineHeight={1.2} fontWeight="bold" w="100%" color={'text'}>
+            {title}
+          </Heading>
+          <Text fontSize="md" color={'text'} textAlign="left">{description}</Text>
+        </VStack>
 
       </Box>
     </HStack>
