@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <Container
       borderBottom="1px solid"
-      borderColor={'primary'}
+      borderColor={'text'}
       maxWidth={'1400px'}
       color='text'
       position="fixed"
@@ -54,7 +54,8 @@ const Navbar = () => {
                 _hover={{
                   textDecoration: 'underline',
                   textDecorationColor: 'accent',
-                  textDecorationThickness: '2px'
+                  textDecorationThickness: '2px',
+                  color: 'text'
                 }}
                 color="text"
               >

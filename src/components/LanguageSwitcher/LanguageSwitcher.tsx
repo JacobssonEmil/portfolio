@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
             <MenuButton mr={5} _hover={{
                 textDecoration: 'underline',
                 textDecorationColor: 'accent',
-                color: 'accent',
+                color: 'text',
                 textDecorationThickness: '2px'
                 }}>
             <Box as="span" display="flex" alignItems="center">
