@@ -81,13 +81,11 @@ interface CardProps {
 const Card = ({ id, title, description, date }: CardProps) => {
   const isEvenId = id % 2 === 0;
   let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px';
-  let leftValue = isEvenId ? '-15px' : 'unset';
-  let rightValue = isEvenId ? 'unset' : '-15px';
+
 
   const isMobile = useBreakpointValue({ base: true, md: false });
   if (isMobile) {
-    leftValue = '-15px';
-    rightValue = 'unset';
+
     borderWidthValue = '15px 15px 15px 0';
   }
 
