@@ -101,21 +101,10 @@ const Card = ({ id, title, description, date }: CardProps) => {
       alignItems="center"
       pos="relative"
       boxShadow="base"
-      _before={{
-        content: `""`,
-        w: '0',
-        h: '0',
-        borderColor: `transparent ${'background'} transparent`,
-        borderStyle: 'solid',
-        borderWidth: borderWidthValue,
-        position: 'absolute',
-        left: leftValue,
-        right: rightValue,
-        display: 'block'
-      }}
+      
     >
       <Box>
-        <Text fontSize="lg" color={'primary'}>
+        <Text fontSize="lg" color={'text'}>
           {date}
         </Text>
 
@@ -123,7 +112,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
   <Heading  size='md'  lineHeight={1.2} fontWeight="bold" w="100%" color={'text'}>
     {title}
   </Heading>
-  <Text fontSize="md" color={'primary'} textAlign="left">{description}</Text>
+  <Text fontSize="md" color={'text'} textAlign="left">{description}</Text>
 </VStack>
 
       </Box>
