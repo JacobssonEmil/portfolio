@@ -1,6 +1,5 @@
-// src/components/Navbar/Navbar.tsx
 import { useTranslation } from 'react-i18next';
-import { Box, Flex, Text, IconButton, HStack, Stack, useDisclosure,  Container, Avatar, Menu, MenuButton, MenuItem, MenuList, Link } from '@chakra-ui/react';
+import { Box, Flex, IconButton, HStack, Stack, useDisclosure, Container, Avatar, Menu, MenuButton, MenuItem, MenuList, Link, Text } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, EmailIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
@@ -45,8 +44,9 @@ const Navbar = () => {
         />
         <HStack spacing={8} alignItems={'center'}>
           <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-            {Links.map(link => (
+            {Links.map((link, index) => (
               <Box
+                key={index}
                 as="a"
                 href={`#${link.ref}`}
                 p={2}
@@ -64,14 +64,13 @@ const Navbar = () => {
           </HStack>
         </HStack>
         <Flex alignItems={'center'}>
-          <LanguageSwitcher/>
+          <LanguageSwitcher />
           <Menu>
             <MenuButton>
               <Avatar size='sm' name='Emil Jacobsson' src='/images/Profilbild.jpeg' />
               <ChevronDownIcon boxSize={6} mt={1}></ChevronDownIcon>
             </MenuButton>
             <MenuList color='text' bg={'background'}>
-              {/* Link entries updated to use translation */}
               <Link href='https://www.linkedin.com/in/emiljacobsson/' isExternal _hover={{
                 textDecoration: 'underline',
                 textDecorationColor: 'accent',
@@ -106,8 +105,9 @@ const Navbar = () => {
       {isOpen && (
         <Box pb={4} display={{ md: 'none' }}>
           <Stack as={'nav'} spacing={4}>
-            {Links.map(link => (
+            {Links.map((link, index) => (
               <Box
+                key={index}
                 as="a"
                 href={`#${link.ref}`}
                 p={2}

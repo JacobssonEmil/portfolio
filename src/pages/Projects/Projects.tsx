@@ -14,11 +14,9 @@ import ProjectCardPortfolio from '../../components/ProjectCards/Portfolio/Projec
 import { FaCode } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
-
-
 function Project() {
     const { t } = useTranslation();
-    return [
+    return (
         <Container maxWidth="1200px" marginTop="190px">
             <Heading size="lg" color="text"> {/* Use global text color */}
                 <chakra.span
@@ -36,14 +34,14 @@ function Project() {
             </Heading>
 
             <Flex direction="row" wrap="wrap" justifyContent="center">
-                <ProjectCardSmartHouse />
-                <Center marginRight={{ base: "0", md: "59"}} marginLeft={{ base: "0", md: "59"}}>
+                <ProjectCardSmartHouse key="project-smart-house" />
+                <Center marginRight={{ base: "0", md: "59"}} marginLeft={{ base: "0", md: "59"}} key="project-medlemma">
                     <ProjectCardMedlemma />
                 </Center>
-                <ProjectCardPortfolio />
+                <ProjectCardPortfolio key="project-portfolio" />
             </Flex>
         </Container>
-    ];
+    );
 }
 
 export default Project;
