@@ -12,6 +12,7 @@ const TechIcons = () => {
     { src: './images/Jira.png', alt: 'Jira' },
     { src: './images/Bootstrap.png', alt: 'Bootstrap' },
     { src: './images/Kotlin.png', alt: 'Kotlin' },
+    { src: './images/Java.png', alt: 'Java' },
   ];
 
   return (
