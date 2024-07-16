@@ -43,6 +43,8 @@ const initI18n = () => {
             "Smart Home Description": "A website and mobile app for remotely controlling devices in a prototype house.",
             "Portfolio Title": "Portfolio",
             "Portfolio Description": "A portfolio website designed to showcase my projects.",
+            "BookDB Title": "BookDB",
+            "BookDB Description": "A mobile app for organizing your personal book collection with detailed info.",
             // Project Page Modals
             "Smart Home Modal Title": "Smart Home",
             "Smart Home Modal Description": "A website and mobile app for remotely controlling devices in a prototype house. Users can access an intuitive interface to control the house’s lighting, windows, and security systems, as well as to monitor sensor information from the house. The system facilitates two-way communication, allowing data to be sent from the application to the smart house as well as reading and sending sensor data back to the app, all from one single location.",
@@ -50,6 +52,9 @@ const initI18n = () => {
             "Portfolio Modal Description": "A portfolio website designed to showcase my projects.",
             "Medlemma Modal Title": "Medlemma",
             "Medlemma Modal Description": "An app for managing your store memberships. With this app, users can easily collect, organize, and manage all their memberships in various stores efficiently. Users can also smoothly display their membership cards directly from their mobile when needed.",
+            "BookDB Modal Title": "Medlemma",
+            "BookDB Modal Description": "The app provides a platform for documenting books you have read, managing a personal wishlist, and gaining insights through statistics on genres and reading habits; it also includes the ability to scan ISBN numbers to fetch book information from both the Google Books API and the National Library of Sweden API.",
+           
             // Skills Page
             "Technologies and Tools Title": "Technologies and Tools",
             "Skills 1": "⭐ Building responsive web applications (SPA) in React.js.",
@@ -88,6 +93,8 @@ const initI18n = () => {
             "Smart Home Description": "En webbplats och mobilapp för fjärrstyrning av enheter i ett prototyp hus.",
             "Portfolio Title": "Portfölj",
             "Portfolio Description": "En portföljwebbplats designad för att visa mina projekt.",
+            "BookDB Title": "BookDB",
+            "BookDB Description": "En mobilapp för att organisera din personliga boksamling med detaljerad information.",
             // Project Page Modals
             "Smart Home Modal Title": "Smart Hem",
             "Smart Home Modal Description": "En webbplats och mobilapp för fjärrstyrning av enheter i ett prototyp hus. Användare kan komma åt ett intuitivt gränssnitt för att kontrollera husets belysning, fönster och säkerhetssystem samt övervaka sensordata från huset. Systemet underlättar tvåvägskommunikation, vilket gör det möjligt att skicka data från applikationen till smarta huset samt läsa och skicka sensordata tillbaka till appen, allt från en enda plats.",
@@ -95,6 +102,9 @@ const initI18n = () => {
             "Portfolio Modal Description": "En portföljwebbplats designad för att visa mina projekt.",
             "Medlemma Modal Title": "Medlemma",
             "Medlemma Modal Description": "En app för att hantera dina butiksmedlemskap. Med denna app kan användare enkelt samla in, organisera och hantera alla sina medlemskap i olika butiker effektivt. Användare kan också smidigt visa sina medlemskort direkt från mobilen vid behov.",
+            "BookDB Modal Title": "Medlemma",
+            "BookDB Modal Description": "Appen erbjuder en plattform för att dokumentera böcker du har läst, hantera en personlig önskelista och få insikter genom statistik över genrer och läsvanor; den inkluderar även möjligheten att skanna ISBN-nummer för att hämta bokinformation från både Google Books API och Sveriges Nationalbiblioteks API.",
+           
             // Skills Page
             "Technologies and Tools Title": "Teknologier och Verktyg",
             "Skills 1": "⭐ Bygger responsiva webbapplikationer (SPA) i React.js.",
