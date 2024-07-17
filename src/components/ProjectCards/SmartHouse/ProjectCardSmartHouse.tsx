@@ -33,28 +33,30 @@ function ProjectCardSmartHouse() {
     return (
         <>
             <Card
-                maxW='sm'
-                boxShadow='base'
-                rounded='lg'
-                mt={50}
-                overflow="hidden"
-                bgColor='background' // Solid background color for a cleaner look
-                color='text' // Text color from global settings
-                height={350}
-                width={350}
-                display='flex'
-                flexDirection='column'
-                _hover={isMobile ? {} : {
-                    transform: 'scale(1.05)',
-                    transition: 'transform 0.3s ease-in-out',
-                }}
-            >
+    boxShadow='base'
+    rounded='lg'
+    mt={50}
+    overflow="hidden"
+    bgColor='background'
+    color='text'
+    height={350}
+    width={'100%'} // Ensures the card takes full width of its container
+    maxW={350} // Ensures max width is consistent across breakpoints
+    display='flex'
+    flexDirection='column'
+    _hover={isMobile ? {} : {
+        transform: 'scale(1.05)',
+        transition: 'transform 0.3s ease-in-out',
+    }}
+>
+
                 <Image
                     src='/images/SmartHouse.jpg'
                     alt='Smart House'
                     objectFit='cover'
                     height={175}
-                    maxWidth={350}
+    width="100%" // Ensures image takes full width of the card
+    maxWidth={350} // Ensures image does not exceed the card's width
                 />
                 <Stack mt='0' spacing='3' p={5} height='120px' overflow='hidden'>
                     <Heading size='md' onClick={onOpen} cursor='pointer' _hover={{
