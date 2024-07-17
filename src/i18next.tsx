@@ -52,7 +52,7 @@ const initI18n = () => {
             "Portfolio Modal Description": "A portfolio website designed to showcase my projects.",
             "Medlemma Modal Title": "Medlemma",
             "Medlemma Modal Description": "An app for managing your store memberships. With this app, users can easily collect, organize, and manage all their memberships in various stores efficiently. Users can also smoothly display their membership cards directly from their mobile when needed.",
-            "BookDB Modal Title": "Medlemma",
+            "BookDB Modal Title": "BookDB",
             "BookDB Modal Description": "The app provides a platform for documenting books you have read, managing a personal wishlist, and gaining insights through statistics on genres and reading habits; it also includes the ability to scan ISBN numbers to fetch book information from both the Google Books API and the National Library of Sweden API.",
            
             // Skills Page
@@ -102,7 +102,7 @@ const initI18n = () => {
             "Portfolio Modal Description": "En portföljwebbplats designad för att visa mina projekt.",
             "Medlemma Modal Title": "Medlemma",
             "Medlemma Modal Description": "En app för att hantera dina butiksmedlemskap. Med denna app kan användare enkelt samla in, organisera och hantera alla sina medlemskap i olika butiker effektivt. Användare kan också smidigt visa sina medlemskort direkt från mobilen vid behov.",
-            "BookDB Modal Title": "Medlemma",
+            "BookDB Modal Title": "BookDB",
             "BookDB Modal Description": "Appen erbjuder en plattform för att dokumentera böcker du har läst, hantera en personlig önskelista och få insikter genom statistik över genrer och läsvanor; den inkluderar även möjligheten att skanna ISBN-nummer för att hämta bokinformation från både Google Books API och Sveriges Nationalbiblioteks API.",
            
             // Skills Page
