@@ -29,7 +29,7 @@ function ProjectCardBookDB() {
                 bgColor='background'
                 color='text'
                 height={350}
-                maxWidth={350}
+                width={350}
                 display='flex'
                 flexDirection='column'
                 _hover={isMobile ? {} : {

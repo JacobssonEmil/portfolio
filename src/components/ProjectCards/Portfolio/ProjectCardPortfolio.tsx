@@ -42,7 +42,7 @@ function ProjectCardPortfolio() {
                 bgColor='background' // Solid background color for cleanliness
                 color='text' // Text color from global settings
                 height={350}
-                maxWidth={350}
+                width={350}
                 display='flex'
                 flexDirection='column'
                 _hover={isMobile ? {} : {
