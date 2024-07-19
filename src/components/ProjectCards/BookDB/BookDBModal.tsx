@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Modal,
   ModalOverlay,
@@ -13,9 +13,9 @@ import {
   ButtonGroup,
   Flex,
   Stack,
-} from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next';
+} from "@chakra-ui/react";
+import { FaGithub } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 interface MedlemmaModalProps {
   isOpen: boolean;
@@ -29,22 +29,23 @@ const BookDBModal: React.FC<MedlemmaModalProps> = ({ isOpen, onClose }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
-      <ModalContent bgColor='background' color='text' mr={2} ml={2}>
-        <ModalHeader>{t('BookDB Modal Title')}</ModalHeader>
+      <ModalContent bgColor="background" color="text" mr={2} ml={2}>
+        <ModalHeader>{t("BookDB Modal Title")}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <Text>{t('BookDB Modal Description')}</Text>
+          <Text>{t("BookDB Modal Description")}</Text>
           <Stack marginTop="4" direction="row" wrap="wrap" spacing={2}>
             <Badge colorScheme="blue">React Native</Badge>
             <Badge colorScheme="purple">react native Async Storage</Badge>
+            <Badge colorScheme="green">Expo</Badge>
           </Stack>
         </ModalBody>
         <ModalFooter>
           <ButtonGroup spacing="2">
-            <Link href='https://github.com/Ludde94/BookDB' isExternal>
+            <Link href="https://github.com/Ludde94/BookDB" isExternal>
               <Flex align="center">
-                <FaGithub size="30"/>
-                <Text marginLeft="2">{t('Github')}</Text>
+                <FaGithub size="30" />
+                <Text marginLeft="2">{t("Github")}</Text>
               </Flex>
             </Link>
           </ButtonGroup>
@@ -52,6 +53,6 @@ const BookDBModal: React.FC<MedlemmaModalProps> = ({ isOpen, onClose }) => {
       </ModalContent>
     </Modal>
   );
-}
+};
 
 export default BookDBModal;
