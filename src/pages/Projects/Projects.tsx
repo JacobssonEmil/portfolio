@@ -1,4 +1,5 @@
 import { Box, Container, Heading, Text, Flex, chakra } from "@chakra-ui/react";
+
 import ProjectCardMedlemma from "../../components/ProjectCards/Medlemma/ProjectCardMedlemma";
 import ProjectCardSmartHouse from "../../components/ProjectCards/SmartHouse/ProjectCardSmartHouse";
 import ProjectCardPortfolio from "../../components/ProjectCards/Portfolio/ProjectCardPortfolio";
@@ -9,7 +10,7 @@ import { useTranslation } from "react-i18next";
 function Project() {
   const { t } = useTranslation();
   return (
-    <Container maxWidth="1200px" marginTop="150px">
+    <Container maxWidth="1200px" marginTop="190px">
       <Heading size="lg" color="text">
         {" "}
         {/* Use global text color */}
@@ -36,16 +37,16 @@ function Project() {
         wrap="wrap"
         justifyContent={{ base: "center", xl: "space-between" }}
       >
-        <Box p={{ base: 4, md: 4, xl: 0 }} pb={{ base: 0, md: 0 }}>
+        <Box p={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardSmartHouse key="project-smart-house" />
         </Box>
-        <Box p={{ base: 4, md: 4, xl: 0 }} pb={{ base: 0, md: 0 }}>
+        <Box p={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardBookDB key="project-bookdb" />
         </Box>
-        <Box p={{ base: 4, md: 4, xl: 0 }} pb={{ base: 0, md: 0 }}>
+        <Box p={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardMedlemma key="project-medlemma" />
         </Box>
-        <Box p={{ base: 4, md: 4, xl: 0 }} pb={{ base: 0, md: 0 }}>
+        <Box p={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardPortfolio key="project-portfolio" />
         </Box>
       </Flex>
