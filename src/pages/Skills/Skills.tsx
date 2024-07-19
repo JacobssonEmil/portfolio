@@ -15,7 +15,7 @@ function Skills() {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth="1200px" marginTop="200px">
+    <Container maxWidth="1200px" marginTop="150px">
       <Heading size="lg" color="text">
         <chakra.span
           borderBottom="3px solid"
