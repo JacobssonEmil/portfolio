@@ -58,7 +58,7 @@ const initI18n = () => {
               "A portfolio website featuring sections for about me, education, projects, and skills, designed to showcase and highlight my work.",
             "BookDB Title": "BookDB",
             "BookDB Description":
-              "A app helps you track books, manage a wishlist, view reading stats, and scan ISBNs for details from Google Books and the National Library of Sweden.",
+              "An app to help you track books, manage a wishlist, view reading stats, and scan ISBN barcodes for details from Google Books.",
             // Project Page Modals
             "Smart Home Modal Title": "Smart Home",
             "Smart Home Modal Description":
@@ -111,23 +111,23 @@ const initI18n = () => {
             "Projects Title": "Projekt",
             "Medlemma Title": "Medlemma",
             "Medlemma Description":
-              "En app för att hantera dina butiksmedlemskap.",
+              "En Android-app gjord för ett Ung Företagsamhet-företag. Appen organiserar och visar dina butikmedlemskap på mobilen.",
             "Smart Home Title": "Smart Hem",
             "Smart Home Description":
-              "En webbplats och mobilapp för fjärrstyrning av enheter i ett prototyp hus.",
+              "En webbplats och app för fjärrstyrning av ett prototyphus, som hanterar belysning, fönster, säkerhet och sensorer via ett intuitivt gränssnitt.",
             "Portfolio Title": "Portfölj",
             "Portfolio Description":
-              "En portföljwebbplats designad för att visa mina projekt.",
+              "En portföljsida med sektioner för om mig, utbildning, projekt och färdigheter, utformad för att visa och framhäva mitt arbete.",
             "BookDB Title": "BookDB",
             "BookDB Description":
-              "En mobilapp för att organisera din personliga boksamling med detaljerad information.",
+              "En app för att hjälpa dig att hålla koll på böcker, hantera en önskelista, se lässtatistik och skanna ISBN sträckkoder för detaljer från Google Books.",
             // Project Page Modals
             "Smart Home Modal Title": "Smart Hem",
             "Smart Home Modal Description":
               "En webbplats och mobilapp för fjärrstyrning av enheter i ett prototyp hus. Användare kan komma åt ett intuitivt gränssnitt för att kontrollera husets belysning, fönster och säkerhetssystem samt övervaka sensordata från huset. Systemet underlättar tvåvägskommunikation, vilket gör det möjligt att skicka data från applikationen till smarta huset samt läsa och skicka sensordata tillbaka till appen, allt från en enda plats.",
             "Portfolio Modal Title": "Portfölj",
             "Portfolio Modal Description":
-              "En portföljwebbplats designad för att visa mina projekt.",
+              "En portföljsida utformad för att visa mitt arbete, med sektioner för om mig, utbildning, projekt och färdigheter. Byggd som en single-page application (SPA) med JavaScript, React och Chakra UI, erbjuder den en sömlös, interaktiv upplevelse.",
             "Medlemma Modal Title": "Medlemma",
             "Medlemma Modal Description":
               "En app för att hantera dina butiksmedlemskap. Med denna app kan användare enkelt samla in, organisera och hantera alla sina medlemskap i olika butiker effektivt. Användare kan också smidigt visa sina medlemskort direkt från mobilen vid behov.",
