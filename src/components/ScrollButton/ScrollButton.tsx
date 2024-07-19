@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, Text, Button, Image } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import { FaArrowUp } from "react-icons/fa";
 
 const handleScrollToTop = () => {
