@@ -7,7 +7,6 @@ import {
   Box,
   Flex,
   Text,
-  background,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useTranslation } from "react-i18next";
