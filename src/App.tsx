@@ -6,12 +6,14 @@ import Projects from "./pages/Projects/Projects";
 import Skills from "./pages/Skills/Skills";
 import Footer from "./pages/Footer/Footer";
 import ScrollIndicator from "./components/ScrollArrow/ScrollArrow";
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 const App = (): JSX.Element => {
   return (
     <Box>
       <ScrollIndicator />
       <Navbar />
+      <ScrollButton />
       <Box id="about" pt="20px" mt="0px">
         {" "}
         {/* Adding padding and negative margin to compensate for navbar height */}
