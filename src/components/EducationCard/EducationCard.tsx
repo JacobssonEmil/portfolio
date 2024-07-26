@@ -107,11 +107,7 @@ const Card = ({ id, title, description, date }: CardProps) => {
       }}
     >
       <Box>
-        <Text fontSize="lg" color={"primary"} fontWeight={"bold"}>
-          {date}
-        </Text>
-
-        <VStack spacing={2} mb={3} align="left">
+        <VStack spacing={2} mb={2} align="left">
           <Heading
             size="md"
             lineHeight={1.2}
@@ -121,6 +117,9 @@ const Card = ({ id, title, description, date }: CardProps) => {
           >
             {title}
           </Heading>
+          <Text fontSize="md" color={"text"} textAlign="left">
+            {date}
+          </Text>
           <Text fontSize="md" color={"text"} textAlign="left">
             {description}
           </Text>
