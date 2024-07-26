@@ -86,7 +86,7 @@ const Navbar = () => {
           <Flex alignItems="center">
             <LanguageSwitcher />
             <Menu>
-              <MenuButton _hover={{ bg: "gray.700" }}>
+              <MenuButton>
                 <Avatar
                   size="sm"
                   name="Emil Jacobsson"
