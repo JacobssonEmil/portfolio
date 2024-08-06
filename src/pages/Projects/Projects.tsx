@@ -4,7 +4,6 @@ import ProjectCardMedlemma from "../../components/ProjectCards/Medlemma/ProjectC
 import ProjectCardSmartHouse from "../../components/ProjectCards/SmartHouse/ProjectCardSmartHouse";
 import ProjectCardPortfolio from "../../components/ProjectCards/Portfolio/ProjectCardPortfolio";
 import ProjectCardBookDB from "../../components/ProjectCards/BookDB/ProjectCardBookDB";
-import { FaCode } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 function Project() {

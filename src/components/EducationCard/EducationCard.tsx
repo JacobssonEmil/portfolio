@@ -1,22 +1,12 @@
 import {
   Box,
-  chakra,
   Container,
   Text,
   HStack,
-  VStack,
-  Flex,
   useBreakpointValue,
   Heading,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-
-interface EducationProps {
-  id: number;
-  title: string;
-  description: string;
-  date: string;
-}
 
 function EducationCard() {
   const { t } = useTranslation();
@@ -34,8 +24,6 @@ function EducationCard() {
       description: t("NTI High School"),
     },
   ];
-  const isMobile = useBreakpointValue({ base: true, md: false });
-  const isDesktop = useBreakpointValue({ base: false, md: true });
 
   return (
     <Container

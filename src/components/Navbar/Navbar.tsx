@@ -24,7 +24,7 @@ import {
   EmailIcon,
 } from "@chakra-ui/icons";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+/*import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";*/
 
 const Navbar = () => {
   const { t } = useTranslation();

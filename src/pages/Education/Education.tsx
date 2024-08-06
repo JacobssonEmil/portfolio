@@ -1,15 +1,6 @@
 import { useTranslation } from "react-i18next";
-import {
-  Box,
-  Flex,
-  Container,
-  Heading,
-  chakra,
-  Text,
-  Divider,
-} from "@chakra-ui/react";
+import { Box, Flex, Container, Heading, chakra, Text } from "@chakra-ui/react";
 import EducationCard from "../../components/EducationCard/EducationCard";
-import { FaGraduationCap } from "react-icons/fa";
 
 function Education() {
   const { t } = useTranslation();
