@@ -2,7 +2,6 @@ import { Box, Container, Heading, Text, Flex, chakra } from "@chakra-ui/react";
 
 import ProjectCardMedlemma from "../../components/ProjectCards/Medlemma/ProjectCardMedlemma";
 import ProjectCardSmartHouse from "../../components/ProjectCards/SmartHouse/ProjectCardSmartHouse";
-import ProjectCardPortfolio from "../../components/ProjectCards/Portfolio/ProjectCardPortfolio";
 import ProjectCardBookDB from "../../components/ProjectCards/BookDB/ProjectCardBookDB";
 import { useTranslation } from "react-i18next";
 
