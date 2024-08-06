@@ -16,12 +16,12 @@ const App = (): JSX.Element => {
         <Navbar />
         <ScrollButton />
 
-        <Box id="about" mt="120px">
+        <Box id="about" mt="130px">
           <About />
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider my="50px" />
+          <Divider my="70px" />
         </Box>
 
         <Box id="projects">
@@ -29,7 +29,7 @@ const App = (): JSX.Element => {
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider my="50px" />
+          <Divider my="70px" />
         </Box>
 
         <Box id="education">
@@ -37,14 +37,14 @@ const App = (): JSX.Element => {
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider my="50px" />
+          <Divider my="70px" />
         </Box>
 
         <Box id="skills">
           <Skills />
         </Box>
       </Box>
-      <Box id="footer" mt={50}>
+      <Box id="footer" mt={70}>
         <Footer />
       </Box>
     </>
