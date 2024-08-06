@@ -16,7 +16,7 @@ const App = (): JSX.Element => {
         <Navbar />
         <ScrollButton />
 
-        <Box id="about" mt="130px">
+        <Box id="about" pt="130px">
           <About />
         </Box>
 
