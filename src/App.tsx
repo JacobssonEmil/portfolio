@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Divider } from "@chakra-ui/react";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About/About";
 import Education from "./pages/Education/Education";
@@ -10,31 +10,44 @@ import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 const App = (): JSX.Element => {
   return (
-    <Box>
-      <ScrollIndicator />
-      <Navbar />
-      <ScrollButton />
-      <Box id="about" pt="20px" mt="0px">
-        {" "}
-        <About />
-      </Box>
+    <>
+      <Box mx="auto">
+        <ScrollIndicator />
+        <Navbar />
+        <ScrollButton />
 
-      <Box id="projects" pt="20px" mt="0px">
-        <Projects />
-      </Box>
+        <Box id="about" mt="120px">
+          <About />
+        </Box>
 
-      <Box id="education" pt="20px" mt="0px">
-        <Education />
-      </Box>
+        <Box maxW="1270px" mx="auto">
+          <Divider my="50px" />
+        </Box>
 
-      <Box id="skills" pt="20px" mt="-0px">
-        <Skills />
-      </Box>
+        <Box id="projects">
+          <Projects />
+        </Box>
 
-      <Box id="footer" pt="20px" mt="0px">
+        <Box maxW="1270px" mx="auto">
+          <Divider my="50px" />
+        </Box>
+
+        <Box id="education">
+          <Education />
+        </Box>
+
+        <Box maxW="1270px" mx="auto">
+          <Divider my="50px" />
+        </Box>
+
+        <Box id="skills">
+          <Skills />
+        </Box>
+      </Box>
+      <Box id="footer" mt={50}>
         <Footer />
       </Box>
-    </Box>
+    </>
   );
 };
 

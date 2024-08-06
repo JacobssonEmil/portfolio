@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <Box bg={"#e2e2e6"}>
-      <Container as={Stack} maxW="1300px" py={6} mt={100} align="center">
+      <Container as={Stack} maxW="1300px" py={6} align="center">
         <Box>
           <Text fontSize="sm" color="subtleText">
             © 2024 by Emil Jacobsson. {t("All rights reserved")}

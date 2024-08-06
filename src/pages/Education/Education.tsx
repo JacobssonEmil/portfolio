@@ -6,7 +6,7 @@ function Education() {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth="1300px" marginTop="100px">
+    <Container maxWidth="1300px">
       <Box>
         <Heading size="lg" color="text">
           <chakra.span>

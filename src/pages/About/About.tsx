@@ -15,7 +15,7 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth="1300px" mt="100px">
+    <Container maxWidth="1300px">
       <Box textAlign="left" maxW={"700px"}>
         <Heading size="3xl" color="text" mb={4}>
           Emil J.

@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 function Project() {
   const { t } = useTranslation();
   return (
-    <Container maxWidth="1300px" marginTop="100px">
+    <Container maxWidth="1300px">
       <Heading size="lg" color="text">
         {" "}
         <chakra.span>
@@ -33,9 +33,9 @@ function Project() {
         <Box p={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardMedlemma key="project-medlemma" />
         </Box>
-        <Box p={{ base: 0, md: 4, xl: 0 }}>
+        {/**<Box p={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardPortfolio key="project-portfolio" />
-        </Box>
+        </Box> */}
       </Flex>
     </Container>
   );
