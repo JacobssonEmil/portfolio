@@ -16,35 +16,35 @@ const App = (): JSX.Element => {
         <Navbar />
         <ScrollButton />
 
-        <Box id="about" pt="130px">
+        <Box id="about" pt="130px" pb={70}>
           <About />
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider my="70px" />
+          <Divider />
         </Box>
 
-        <Box id="projects">
+        <Box id="projects" pt={70} pb={70}>
           <Projects />
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider my="70px" />
+          <Divider />
         </Box>
 
-        <Box id="education">
+        <Box id="education" pt={70} pb={70}>
           <Education />
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider my="70px" />
+          <Divider />
         </Box>
 
-        <Box id="skills">
+        <Box id="skills" pt={70} pb={70}>
           <Skills />
         </Box>
       </Box>
-      <Box id="footer" mt={70}>
+      <Box id="footer" mt={35}>
         <Footer />
       </Box>
     </>
