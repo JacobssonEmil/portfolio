@@ -77,7 +77,17 @@ const Navbar = () => {
                     <Flex marginEnd={2}>
                       <FaLinkedin color="text" />
                     </Flex>
-                    <Text>{t("Linkedin")}</Text>
+                    <Text
+                      color={"subtleText"}
+                      _hover={{
+                        textDecoration: "underline",
+                        textDecorationColor: "subtleText",
+                        color: "text",
+                        textDecorationThickness: "1px",
+                      }}
+                    >
+                      {t("Linkedin")}
+                    </Text>
                   </MenuItem>
                 </Link>
                 <Link
@@ -94,7 +104,17 @@ const Navbar = () => {
                     <Flex marginEnd={2}>
                       <FaGithub color="text" />
                     </Flex>
-                    <Text>{t("Github")}</Text>
+                    <Text
+                      color={"subtleText"}
+                      _hover={{
+                        textDecoration: "underline",
+                        textDecorationColor: "subtleText",
+                        color: "text",
+                        textDecorationThickness: "1px",
+                      }}
+                    >
+                      {t("Github")}
+                    </Text>
                   </MenuItem>
                 </Link>
                 <Link
@@ -103,13 +123,25 @@ const Navbar = () => {
                   _hover={{
                     textDecoration: "underline",
                     textDecorationColor: "subtleText",
-                    color: "subtleText",
+                    color: "text",
                     textDecorationThickness: "1px",
                   }}
                 >
                   <MenuItem bg="background">
-                    <EmailIcon marginTop={1} marginEnd={2} color="texst" />
-                    <Text>{t("Email")}</Text>
+                    <Flex marginEnd={2}>
+                      <EmailIcon color="text" />
+                    </Flex>
+                    <Text
+                      color={"subtleText"}
+                      _hover={{
+                        textDecoration: "underline",
+                        textDecorationColor: "subtleText",
+                        color: "text",
+                        textDecorationThickness: "1px",
+                      }}
+                    >
+                      {t("Email")}
+                    </Text>
                   </MenuItem>
                 </Link>
               </MenuList>
@@ -141,9 +173,8 @@ const Navbar = () => {
                   _hover={{
                     textDecoration: "underline",
                     textDecorationColor: "subtleText",
+                    color: "text",
                     textDecorationThickness: "1px",
-
-                    color: "subtleText",
                   }}
                   color="subtleText"
                   fontWeight="medium"
@@ -168,8 +199,8 @@ const Navbar = () => {
                   _hover={{
                     textDecoration: "underline",
                     textDecorationColor: "subtleText",
-                    textDecorationThickness: "2px",
-                    color: "subtleText",
+                    color: "text",
+                    textDecorationThickness: "1px",
                   }}
                   color="subtleText"
                   fontWeight="medium"
