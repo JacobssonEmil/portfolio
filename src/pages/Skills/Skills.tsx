@@ -16,12 +16,15 @@ import {
   FaDocker,
   FaGitAlt,
   FaHtml5,
+  FaJava,
   FaJs,
   FaNodeJs,
+  FaPython,
   FaReact,
+  FaServer,
 } from "react-icons/fa";
 import { SiBootstrap, SiJira, SiKotlin, SiReact } from "react-icons/si";
-import { MdApi } from "react-icons/md"; // Importing the generic API icon
+import { MdApi } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
 function Skills() {
@@ -142,7 +145,7 @@ function Skills() {
             bg="none"
             color="text"
           >
-            <Icon as={FaReact} mr={2} boxSize={4} />
+            <Icon as={FaServer} mr={2} boxSize={4} />
             Express
           </Badge>
           <Badge
@@ -186,6 +189,39 @@ function Skills() {
             bg="none"
             color="text"
           >
+            <Icon as={FaPython} mr={2} boxSize={4} />
+            Python
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaJava} mr={2} boxSize={4} />
+            Java
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={SiKotlin} mr={2} boxSize={4} />
+            Kotlin
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
             <Icon as={FaGitAlt} mr={2} boxSize={4} />
             Git
           </Badge>
@@ -199,39 +235,6 @@ function Skills() {
           >
             <Icon as={SiJira} mr={2} boxSize={4} />
             Jira
-          </Badge>
-          <Badge
-            p={2}
-            borderRadius="md"
-            display="flex"
-            alignItems="center"
-            bg="none"
-            color="text"
-          >
-            <Icon as={FaAws} mr={2} boxSize={4} />
-            Python
-          </Badge>
-          <Badge
-            p={2}
-            borderRadius="md"
-            display="flex"
-            alignItems="center"
-            bg="none"
-            color="text"
-          >
-            <Icon as={FaDocker} mr={2} boxSize={4} />
-            Java
-          </Badge>
-          <Badge
-            p={2}
-            borderRadius="md"
-            display="flex"
-            alignItems="center"
-            bg="none"
-            color="text"
-          >
-            <Icon as={SiKotlin} mr={2} boxSize={4} />
-            Kotlin
           </Badge>
         </Grid>
       </Box>
