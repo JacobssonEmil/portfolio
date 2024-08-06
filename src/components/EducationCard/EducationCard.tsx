@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Text,
-  HStack,
-  useBreakpointValue,
-  Heading,
-} from "@chakra-ui/react";
+import { Box, Container, Text, HStack, Heading } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
 function EducationCard() {
