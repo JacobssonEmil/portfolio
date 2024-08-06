@@ -10,10 +10,8 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import {
-  FaAws,
   FaCss3Alt,
   FaDatabase,
-  FaDocker,
   FaGitAlt,
   FaHtml5,
   FaJava,

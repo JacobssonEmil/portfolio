@@ -1,5 +1,4 @@
 import { Box, Container, Heading, Text, Flex, chakra } from "@chakra-ui/react";
-
 import ProjectCardMedlemma from "../../components/ProjectCards/Medlemma/ProjectCardMedlemma";
 import ProjectCardSmartHouse from "../../components/ProjectCards/SmartHouse/ProjectCardSmartHouse";
 import ProjectCardBookDB from "../../components/ProjectCards/BookDB/ProjectCardBookDB";
@@ -21,18 +20,22 @@ function Project() {
       <Flex
         direction="row"
         wrap="wrap"
-        justifyContent={{ base: "center", xl: "space-between" }}
+        justifyContent={{ base: "left", xl: "space-between" }}
       >
-        <Box p={{ base: 0, md: 4, xl: 0 }}>
+        <Box pr={{ base: 0, md: 4, xl: 0 }} mb={2}>
           <ProjectCardSmartHouse key="project-smart-house" />
         </Box>
-        <Box p={{ base: 0, md: 4, xl: 0 }}>
+        <Box
+          pl={{ base: 0, md: 4, xl: 0 }}
+          pr={{ base: 0, md: 8, xl: 0 }}
+          mb={2}
+        >
           <ProjectCardBookDB key="project-bookdb" />
         </Box>
-        <Box p={{ base: 0, md: 4, xl: 0 }}>
+        <Box pr={{ base: 0, md: 4, xl: 0 }}>
           <ProjectCardMedlemma key="project-medlemma" />
         </Box>
-        {/**<Box p={{ base: 0, md: 4, xl: 0 }}>
+        {/**<Box p={{ base: 0, md: 4, xl: 0 }} mb={2}>
           <ProjectCardPortfolio key="project-portfolio" />
         </Box> */}
       </Flex>
