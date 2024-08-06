@@ -62,14 +62,14 @@ const Navbar = () => {
                 <ChevronDownIcon boxSize={6} mt={1} color="subtleText" />
               </MenuButton>
 
-              <MenuList color="subtleText" bg="background">
+              <MenuList bg="background">
                 <Link
                   href="https://www.linkedin.com/in/emiljacobsson/"
                   isExternal
                   _hover={{
                     textDecoration: "underline",
                     textDecorationColor: "subtleText",
-                    color: "subtleText",
+                    color: "text",
                     textDecorationThickness: "1px",
                   }}
                 >
@@ -86,13 +86,13 @@ const Navbar = () => {
                   _hover={{
                     textDecoration: "underline",
                     textDecorationColor: "subtleText",
-                    color: "subtleText",
+                    color: "text",
                     textDecorationThickness: "1px",
                   }}
                 >
                   <MenuItem bg="background">
                     <Flex marginEnd={2}>
-                      <FaGithub color="#333" />
+                      <FaGithub color="text" />
                     </Flex>
                     <Text>{t("Github")}</Text>
                   </MenuItem>
@@ -108,7 +108,7 @@ const Navbar = () => {
                   }}
                 >
                   <MenuItem bg="background">
-                    <EmailIcon marginTop={1} marginEnd={2} color="#333" />
+                    <EmailIcon marginTop={1} marginEnd={2} color="texst" />
                     <Text>{t("Email")}</Text>
                   </MenuItem>
                 </Link>
