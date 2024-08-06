@@ -14,6 +14,8 @@ import {
   MenuList,
   Link,
   Text,
+  Heading,
+  Divider,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -29,10 +31,9 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const Links = [
     { name: t("About"), ref: "about" },
-    { name: t("Education"), ref: "education" },
     { name: t("Projects"), ref: "projects" },
+    { name: t("Education"), ref: "education" },
     { name: t("Technologies and Tools"), ref: "skills" },
-    { name: t("Contact"), ref: "footer" },
   ];
 
   return (
@@ -42,72 +43,39 @@ const Navbar = () => {
       top="0"
       left="0"
       zIndex="1000"
-      bg="primary"
+      bg="background"
     >
-      <Container maxW="container.xl">
+      <Container maxW="1300px">
         <Flex h={16} alignItems="center" justifyContent="space-between">
-          <IconButton
-            size="md"
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon boxSize="24px" />}
-            aria-label={isOpen ? "Close Menu" : "Open Menu"}
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-            variant="ghost"
-            backgroundColor="transparent"
-            _hover={{ bg: "transparent" }}
-            _active={{ bg: "transparent" }}
-            _focus={{ boxShadow: "none" }}
-            color="background"
-          />
-          <HStack spacing={8} alignItems="center">
-            <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
-              {Links.map((link, index) => (
-                <Box
-                  key={index}
-                  as="a"
-                  href={`#${link.ref}`}
-                  p={2}
-                  rounded="md"
-                  _hover={{
-                    textDecoration: "underline",
-                    textDecorationColor: "background",
-                    textDecorationThickness: "2px",
-                    color: "background",
-                  }}
-                  color="background"
-                  fontWeight="medium"
-                  fontSize="md"
-                >
-                  {link.name}
-                </Box>
-              ))}
-            </HStack>
-          </HStack>
           <Flex alignItems="center">
-            <LanguageSwitcher />
             <Menu>
+              <Heading as="h4" size="md" marginRight={4}>
+                Emil Jacobsson
+              </Heading>
               <MenuButton>
                 <Avatar
-                  size="sm"
+                  marginTop={"4px"}
+                  size="xs"
                   name="Emil Jacobsson"
                   src="/images/Profilbild.jpeg"
                 />
-                <ChevronDownIcon boxSize={6} mt={1} color="background" />
+                <ChevronDownIcon boxSize={6} mt={1} color="subtleText" />
               </MenuButton>
-              <MenuList color="text" bg="background">
+
+              <MenuList color="subtleText" bg="background">
                 <Link
                   href="https://www.linkedin.com/in/emiljacobsson/"
                   isExternal
                   _hover={{
                     textDecoration: "underline",
-                    textDecorationColor: "text",
-                    color: "text",
-                    textDecorationThickness: "2px",
+                    textDecorationColor: "subtleText",
+                    color: "subtleText",
+                    textDecorationThickness: "1px",
                   }}
                 >
-                  <MenuItem bg="white">
+                  <MenuItem bg="background">
                     <Flex marginEnd={2}>
-                      <FaLinkedin color="#0A66C2" />
+                      <FaLinkedin color="text" />
                     </Flex>
                     <Text>{t("Linkedin")}</Text>
                   </MenuItem>
@@ -117,14 +85,14 @@ const Navbar = () => {
                   isExternal
                   _hover={{
                     textDecoration: "underline",
-                    textDecorationColor: "text",
-                    color: "text",
-                    textDecorationThickness: "2px",
+                    textDecorationColor: "subtleText",
+                    color: "subtleText",
+                    textDecorationThickness: "1px",
                   }}
                 >
-                  <MenuItem bg="white">
+                  <MenuItem bg="background">
                     <Flex marginEnd={2}>
-                      <FaGithub color="text" />
+                      <FaGithub color="#333" />
                     </Flex>
                     <Text>{t("Github")}</Text>
                   </MenuItem>
@@ -134,37 +102,76 @@ const Navbar = () => {
                   isExternal
                   _hover={{
                     textDecoration: "underline",
-                    textDecorationColor: "text",
-                    color: "text",
-                    textDecorationThickness: "2px",
+                    textDecorationColor: "subtleText",
+                    color: "subtleText",
+                    textDecorationThickness: "1px",
                   }}
                 >
-                  <MenuItem bg="white">
-                    <EmailIcon marginTop={1} marginEnd={2} color="text" />
+                  <MenuItem bg="background">
+                    <EmailIcon marginTop={1} marginEnd={2} color="#333" />
                     <Text>{t("Email")}</Text>
                   </MenuItem>
                 </Link>
               </MenuList>
             </Menu>
           </Flex>
-        </Flex>
-        {isOpen && (
-          <Box pb={4} display={{ md: "none" }}>
-            <Stack as="nav" spacing={4}>
+
+          <HStack spacing={8} alignItems="center">
+            <IconButton
+              size="md"
+              icon={isOpen ? <CloseIcon /> : <HamburgerIcon boxSize="24px" />}
+              aria-label={isOpen ? "Close Menu" : "Open Menu"}
+              display={{ md: "none" }}
+              onClick={isOpen ? onClose : onOpen}
+              variant="ghost"
+              backgroundColor="transparent"
+              _hover={{ bg: "transparent" }}
+              _active={{ bg: "transparent" }}
+              _focus={{ boxShadow: "none" }}
+              color="subtleText"
+            />
+            <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
               {Links.map((link, index) => (
                 <Box
                   key={index}
                   as="a"
                   href={`#${link.ref}`}
-                  p={2}
+                  p={0}
                   rounded="md"
                   _hover={{
                     textDecoration: "underline",
-                    textDecorationColor: "white",
-                    textDecorationThickness: "2px",
-                    color: "white",
+                    textDecorationColor: "subtleText",
+                    textDecorationThickness: "1px",
+
+                    color: "subtleText",
                   }}
-                  color="white"
+                  color="subtleText"
+                  fontWeight="medium"
+                  fontSize="md"
+                >
+                  {link.name}
+                </Box>
+              ))}
+            </HStack>
+          </HStack>
+        </Flex>
+        {isOpen && (
+          <Box pb={4} display={{ md: "none" }}>
+            <Stack as="nav" spacing={8}>
+              {Links.map((link, index) => (
+                <Box
+                  key={index}
+                  as="a"
+                  href={`#${link.ref}`}
+                  p={0}
+                  rounded="md"
+                  _hover={{
+                    textDecoration: "underline",
+                    textDecorationColor: "subtleText",
+                    textDecorationThickness: "2px",
+                    color: "subtleText",
+                  }}
+                  color="subtleText"
                   fontWeight="medium"
                   fontSize="md"
                 >
@@ -175,6 +182,7 @@ const Navbar = () => {
           </Box>
         )}
       </Container>
+      <Divider></Divider>
     </Box>
   );
 };

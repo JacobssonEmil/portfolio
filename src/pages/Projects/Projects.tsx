@@ -10,24 +10,12 @@ import { useTranslation } from "react-i18next";
 function Project() {
   const { t } = useTranslation();
   return (
-    <Container maxWidth="1200px" marginTop="190px">
+    <Container maxWidth="1300px" marginTop="100px">
       <Heading size="lg" color="text">
         {" "}
-        {/* Use global text color */}
-        <chakra.span
-          borderBottom="3px solid"
-          borderColor={"accent"}
-          display="inline-block"
-          paddingBottom="4px"
-        >
+        <chakra.span>
           <Flex>
-            <Box mt={1}>
-              <FaCode color="text" /> {/* Use global text color */}
-            </Box>
-            <Text ml={2} color="text">
-              {t("Projects Title")}
-            </Text>{" "}
-            {/* Use global text color */}
+            <Text color="text">{t("Projects Title")}</Text>{" "}
           </Flex>
         </chakra.span>
       </Heading>

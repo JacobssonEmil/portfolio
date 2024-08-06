@@ -35,15 +35,16 @@ function ProjectCardSmartHouse() {
       <Card
         boxShadow="base"
         rounded="lg"
-        mt={50}
+        mt={6}
         overflow="hidden"
         bgColor="background"
-        color="text"
-        height={390} // Adjusted height for better fit
-        width={"100%"} // Ensures the card takes full width of its container
-        maxW={350} // Ensures max width is consistent across breakpoints
+        height={390}
+        width={"100%"}
+        maxW={350}
         display="flex"
         flexDirection="column"
+        border="1px solid" // Add border here
+        borderColor="gray.200" // Customize the border color as needed
         _hover={
           isMobile
             ? {}
@@ -58,8 +59,8 @@ function ProjectCardSmartHouse() {
           alt="Smart House"
           objectFit="cover"
           height={175}
-          width="100%" // Ensures image takes full width of the card
-          maxWidth={350} // Ensures image does not exceed the card's width
+          width="100%"
+          maxWidth={350}
         />
         <Stack
           mt="0"
@@ -75,13 +76,19 @@ function ProjectCardSmartHouse() {
             size="md"
             onClick={onOpen}
             cursor="pointer"
+            color={"text"}
             _hover={{
-              color: "accent", // Hover color from global settings
+              textDecoration: "underline",
+              textDecorationColor: "text",
+              color: "text",
+              textDecorationThickness: "1px",
             }}
           >
             {t("Smart Home Title")}
           </Heading>
-          <Text noOfLines={4}>{t("Smart Home Description")}</Text>
+          <Text noOfLines={4} color={"subtleText"}>
+            {t("Smart Home Description")}
+          </Text>
         </Stack>
 
         <CardFooter mt="auto" p={4}>
@@ -99,7 +106,7 @@ function ProjectCardSmartHouse() {
                   color="text" // Ensures the button text is consistent
                   size="sm"
                   _hover={{
-                    borderColor: "accent", // Hover state color from global settings
+                    transform: "scale(1.05)",
                   }}
                 >
                   GitHub
@@ -110,10 +117,10 @@ function ProjectCardSmartHouse() {
               <Button
                 onClick={onOpen}
                 size="sm"
-                bgColor="primary" // Background color from global settings
-                color="background" // Text color from global settings
+                bgColor="text"
+                color="background"
                 _hover={{
-                  bgColor: "secondary", // Hover background color from global settings
+                  transform: "scale(1.05)",
                 }}
               >
                 More Info

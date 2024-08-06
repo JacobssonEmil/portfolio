@@ -15,37 +15,40 @@ function About() {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth="600px" mt="200px" color="text">
-      <Box textAlign="center">
-        <Heading size="2xl" color="text" mb={4}>
+    <Container maxWidth="1300px" mt="100px">
+      <Box textAlign="left" maxW={"700px"}>
+        <Heading size="3xl" color="text" mb={4}>
           Emil J.
         </Heading>
-        <Text fontSize="xl" mb={6}>
+        <Text fontSize="2xl" fontWeight={800} color="subtleText" mb={4}>
           {t("About Introduction")}
         </Text>
-        <Flex justifyContent="center" mt={4} gap={6}>
+        <Text color={"subtleText"} fontSize="md" mb={6}>
+          {t("About Description")}
+        </Text>
+        <Flex justifyContent="left" mt={4} gap={6}>
           <Link href="https://www.linkedin.com/in/emiljacobsson/" isExternal>
             <Icon
               as={FaLinkedin}
               boxSize={7}
-              color="primary"
-              _hover={{ color: "accent", transform: "scale(1.1)" }}
+              color="text"
+              _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
           <Link href="https://github.com/JacobssonEmil" isExternal>
             <Icon
               as={FaGithub}
               boxSize={7}
-              color="primary"
-              _hover={{ color: "accent", transform: "scale(1.1)" }}
+              color="text"
+              _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
           <Link href="mailto:emil@jacobsson.com" isExternal>
             <Icon
               as={EmailIcon}
               boxSize={7}
-              color="primary"
-              _hover={{ color: "accent", transform: "scale(1.1)" }}
+              color="text"
+              _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
         </Flex>

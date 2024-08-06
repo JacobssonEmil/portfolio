@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Divider } from "@chakra-ui/react";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About/About";
 import Education from "./pages/Education/Education";
@@ -16,16 +16,15 @@ const App = (): JSX.Element => {
       <ScrollButton />
       <Box id="about" pt="20px" mt="0px">
         {" "}
-        {/* Adding padding and negative margin to compensate for navbar height */}
         <About />
-      </Box>
-
-      <Box id="education" pt="20px" mt="0px">
-        <Education />
       </Box>
 
       <Box id="projects" pt="20px" mt="0px">
         <Projects />
+      </Box>
+
+      <Box id="education" pt="20px" mt="0px">
+        <Education />
       </Box>
 
       <Box id="skills" pt="20px" mt="-0px">

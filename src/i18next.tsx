@@ -36,7 +36,8 @@ const initI18n = () => {
             Github: "Github",
             Email: "Email",
             // About Page
-            "About Introduction":
+            "About Introduction": "Full-Stack Developer",
+            "About Description":
               "I am a passionate fullstack developer from Sweden, who enjoys creating responsive and user-friendly applications. Always eager to learn new technologies and apply them in projects.",
             // Education Page
             "Education Title": "Education",
@@ -74,7 +75,7 @@ const initI18n = () => {
               "The app provides a platform for documenting books you have read, managing a personal wishlist, and gaining insights through statistics on genres and reading habits; it also includes the ability to scan ISBN numbers to fetch book information from both the Google Books API and the National Library of Sweden API.",
 
             // Skills Page
-            "Technologies and Tools Title": "Technologies and Tools",
+            "Technologies and Tools Title": "Skills and Technologies",
             "Skills 1":
               "⭐ Building responsive web applications (SPA) in React.js.",
             "Skills 2":
@@ -98,7 +99,8 @@ const initI18n = () => {
             Github: "Github",
             Email: "E-post",
             // About Page
-            "About Introduction":
+            "About Introduction": "Fullstack Utvecklare",
+            "About Description":
               "Jag är en passionerad fullstack-utvecklare från Sverige som gillar att skapa responsiva och användarvänliga applikationer. Alltid ivrig att lära mig nya teknologier och tillämpa dem i projekt.",
             // Education Page
             "Education Title": "Utbildning",
@@ -136,7 +138,7 @@ const initI18n = () => {
               "Appen erbjuder en plattform för att dokumentera böcker du har läst, hantera en personlig önskelista och få insikter genom statistik över genrer och läsvanor; den inkluderar även möjligheten att skanna ISBN-nummer för att hämta bokinformation från både Google Books API och Sveriges Nationalbiblioteks API.",
 
             // Skills Page
-            "Technologies and Tools Title": "Teknologier och Verktyg",
+            "Technologies and Tools Title": "Färdigheter och tekniker",
             "Skills 1":
               "⭐ Bygger responsiva webbapplikationer (SPA) i React.js.",
             "Skills 2":

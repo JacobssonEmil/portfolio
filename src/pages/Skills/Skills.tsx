@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Container,
@@ -5,57 +6,236 @@ import {
   Heading,
   chakra,
   Text,
-  Image,
+  Badge,
+  Grid,
+  Icon,
 } from "@chakra-ui/react";
-import Technologies from "../../components/TechIcons/TechIcons";
-import { FaScrewdriverWrench } from "react-icons/fa6";
+import {
+  FaAws,
+  FaCss3Alt,
+  FaDatabase,
+  FaDocker,
+  FaGitAlt,
+  FaHtml5,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa";
+import { SiBootstrap, SiJira, SiKotlin, SiReact } from "react-icons/si";
+import { MdApi } from "react-icons/md"; // Importing the generic API icon
 import { useTranslation } from "react-i18next";
 
 function Skills() {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth="1200px" marginTop="150px">
+    <Container maxWidth="1300px" marginTop="100px">
       <Heading size="lg" color="text">
-        <chakra.span
-          borderBottom="3px solid"
-          borderColor={"accent"}
-          display="inline-block"
-          paddingBottom="4px"
-        >
+        <chakra.span>
           <Flex>
-            <Box mt={1}>
-              <FaScrewdriverWrench color="text" />
-            </Box>
-            <Text ml={2} color="text">
-              {t("Technologies and Tools Title")}
-            </Text>
+            <Text color="text">{t("Technologies and Tools Title")}</Text>
           </Flex>
         </chakra.span>
       </Heading>
 
-      <Flex
-        direction={{ base: "column", xl: "row" }}
-        wrap="wrap"
-        justifyContent={{ base: "center", md: "space-between" }}
-        mt={4}
-        alignItems="center"
-      >
-        <Image
-          mt={10}
-          mb={10}
-          src="/images/Skills.gif"
-          alt="Skills"
-          maxBlockSize="400px"
-          objectFit="cover"
-        />
-        <Box color="text" textAlign={"center"} mt={{ base: 0, md: 0 }}>
-          <Technologies />
-          <Text mt={10}>{t("Skills 1")}</Text>
-          <Text>{t("Skills 2")}</Text>
-          <Text>{t("Skills 3")}</Text>
-        </Box>
-      </Flex>
+      <Box id="skills" mt={6}>
+        <Grid
+          templateColumns={{
+            base: "repeat(2, 1fr)",
+            sm: "repeat(3, 1fr)",
+            lg: "repeat(4, 1fr)",
+          }}
+          gap={4}
+        >
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaHtml5} mr={2} boxSize={4} />
+            HTML
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaCss3Alt} mr={2} boxSize={4} />
+            CSS
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={SiBootstrap} mr={2} boxSize={4} />
+            Bootstrap
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaJs} mr={2} boxSize={4} />
+            JavaScript
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaJs} mr={2} boxSize={4} />
+            TypeScript
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaReact} mr={2} boxSize={4} />
+            React
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={SiReact} mr={2} boxSize={4} />
+            React Native
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaNodeJs} mr={2} boxSize={4} />
+            Node.js
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaReact} mr={2} boxSize={4} />
+            Express
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={MdApi} mr={2} boxSize={4} />
+            REST API
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaDatabase} mr={2} boxSize={4} />
+            SQL
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaDatabase} mr={2} boxSize={4} />
+            MongoDB
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaGitAlt} mr={2} boxSize={4} />
+            Git
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={SiJira} mr={2} boxSize={4} />
+            Jira
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaAws} mr={2} boxSize={4} />
+            Python
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={FaDocker} mr={2} boxSize={4} />
+            Java
+          </Badge>
+          <Badge
+            p={2}
+            borderRadius="md"
+            display="flex"
+            alignItems="center"
+            bg="none"
+            color="text"
+          >
+            <Icon as={SiKotlin} mr={2} boxSize={4} />
+            Kotlin
+          </Badge>
+        </Grid>
+      </Box>
     </Container>
   );
 }

@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-
 html {
   scroll-behavior: smooth;
-  
 }
-
+body {
+  font-family: "'Inter', sans-serif";
+}
 .btnWiggle {
   -webkit-animation: btnWiggle 5s infinite;
   -moz-animation: btnWiggle 5s infinite;
@@ -14,29 +12,63 @@ html {
 }
 
 @-webkit-keyframes btnWiggle {
-  0% {-webkit-transform: rotate(0deg);}
-  2% {-webkit-transform: rotate(-2deg);}
-  3.5% {-webkit-transform: rotate(2deg);}
-  5% {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(0deg);}
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  2% {
+    -webkit-transform: rotate(-2deg);
+  }
+  3.5% {
+    -webkit-transform: rotate(2deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
 }
 @-o-keyframes btnWiggle {
-  0% {-webkit-transform: rotate(0deg);}
-  2% {-webkit-transform: rotate(-2deg);}
-  3.5% {-webkit-transform: rotate(2deg);}
-  5% {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(0deg);}
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  2% {
+    -webkit-transform: rotate(-2deg);
+  }
+  3.5% {
+    -webkit-transform: rotate(2deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
 }
 @keyframes btnWiggle {
-  0% {-webkit-transform: rotate(0deg);}
-  2% {-webkit-transform: rotate(-2deg);}
-  3.5% {-webkit-transform: rotate(2deg);}
-  5% {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(0deg);}
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  2% {
+    -webkit-transform: rotate(-2deg);
+  }
+  3.5% {
+    -webkit-transform: rotate(2deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {

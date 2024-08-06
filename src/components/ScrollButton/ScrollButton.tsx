@@ -26,7 +26,7 @@ const ScrollButton = () => {
       <Box position="fixed" bottom="20px" right="20px" zIndex="1000">
         <Button
           onClick={handleScrollToTop}
-          bg="primary"
+          bg="subtleText"
           color="background"
           _hover={{ bg: "accent" }}
         >

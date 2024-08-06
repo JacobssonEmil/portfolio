@@ -1,25 +1,22 @@
-import { extendTheme } from '@chakra-ui/react';
-
+import { extendTheme } from "@chakra-ui/react";
 
 const customTheme = extendTheme({
+  fonts: {
+    heading: "'Inter', sans-serif",
+    body: "'Inter', sans-serif",
+  },
   colors: {
-    text: '#0f1013',
-    background: '#f5f6f9',
-    primary: '#576eb0',
-    secondary: '#a0afdd',
-    accent: '#6482d8',
+    text: "#09090b",
+    subtleText: "#6e6e77",
+    background: "#ffffff",
+    primary: "#0a8537",
+    secondary: "#f4f4f5",
+    accent: "#f4f4f5",
   },
   styles: {
     global: {
-      'html, body': {
-        bg: '#f5f6f9', // Background color
-        color: '#0f1013', // Text color
-      },
-      a: {
-        color: '#7a8e99', // Primary color for links
-        _hover: {
-          color: '#8fabb7', // Accent color on hover
-        },
+      "html, body": {
+        fontFamily: "'Inter', sans-serif",
       },
     },
   },
