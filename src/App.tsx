@@ -21,7 +21,7 @@ const App = (): JSX.Element => {
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider />
+          <Divider borderColor={"gray.300"} />
         </Box>
 
         <Box id="projects" pt={70} pb={70}>
@@ -29,7 +29,7 @@ const App = (): JSX.Element => {
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider />
+          <Divider borderColor={"gray.300"} />
         </Box>
 
         <Box id="education" pt={70} pb={70}>
@@ -37,7 +37,7 @@ const App = (): JSX.Element => {
         </Box>
 
         <Box maxW="1270px" mx="auto">
-          <Divider />
+          <Divider borderColor={"gray.300"} />
         </Box>
 
         <Box id="skills" pt={70} pb={70}>

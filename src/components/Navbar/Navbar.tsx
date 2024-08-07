@@ -212,7 +212,7 @@ const Navbar = () => {
           </Box>
         )}
       </Container>
-      <Divider></Divider>
+      <Divider borderColor={"gray.300"} />
     </Box>
   );
 };
