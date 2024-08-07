@@ -12,6 +12,8 @@ const customTheme = extendTheme({
     primary: "#0a8537",
     secondary: "#f4f4f5",
     accent: "#f4f4f5",
+    linkedin: "#0a66c2",
+    github: "#2b3137",
   },
   styles: {
     global: {

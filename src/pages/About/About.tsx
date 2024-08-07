@@ -31,7 +31,7 @@ function About() {
             <Icon
               as={FaLinkedin}
               boxSize={7}
-              color="text"
+              color="linkedin"
               _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
@@ -39,7 +39,7 @@ function About() {
             <Icon
               as={FaGithub}
               boxSize={7}
-              color="text"
+              color="github"
               _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
@@ -47,7 +47,7 @@ function About() {
             <Icon
               as={EmailIcon}
               boxSize={7}
-              color="text"
+              color="github"
               _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
