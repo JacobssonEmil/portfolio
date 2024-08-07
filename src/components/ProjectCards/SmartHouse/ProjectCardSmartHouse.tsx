@@ -55,7 +55,7 @@ function ProjectCardSmartHouse() {
         }
       >
         <Image
-          src="/images/SmartHouse.jpg"
+          src="/images/SmartHouse.png"
           alt="Smart House"
           objectFit="cover"
           height={175}

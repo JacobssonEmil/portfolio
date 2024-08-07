@@ -55,7 +55,7 @@ function ProjectCardMedlemma() {
         }
       >
         <Image
-          src="/images/Android.jpg"
+          src="/images/Medlemma.png"
           alt={t("Medlemma Title")}
           objectFit="cover"
           height={175}
