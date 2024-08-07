@@ -14,7 +14,6 @@ import {
   MenuList,
   Link,
   Text,
-  Heading,
   Divider,
 } from "@chakra-ui/react";
 import {
@@ -49,9 +48,9 @@ const Navbar = () => {
         <Flex h={16} alignItems="center" justifyContent="space-between">
           <Flex alignItems="center">
             <Menu>
-              <Heading as="h4" size="md" marginRight={4}>
+              {/**<Heading as="h4" size="md" marginRight={4}>
                 Emil Jacobsson
-              </Heading>
+              </Heading>*/}
               <MenuButton>
                 <Avatar
                   marginTop={"4px"}
@@ -75,7 +74,7 @@ const Navbar = () => {
                 >
                   <MenuItem bg="background">
                     <Flex marginEnd={2}>
-                      <FaLinkedin color="text" />
+                      <FaLinkedin color="#0a66c2" />
                     </Flex>
                     <Text
                       color={"subtleText"}
@@ -102,7 +101,7 @@ const Navbar = () => {
                 >
                   <MenuItem bg="background">
                     <Flex marginEnd={2}>
-                      <FaGithub color="text" />
+                      <FaGithub color="#2b3137" />
                     </Flex>
                     <Text
                       color={"subtleText"}
@@ -129,7 +128,7 @@ const Navbar = () => {
                 >
                   <MenuItem bg="background">
                     <Flex marginEnd={2}>
-                      <EmailIcon color="text" />
+                      <EmailIcon color="#2b3137" />
                     </Flex>
                     <Text
                       color={"subtleText"}
