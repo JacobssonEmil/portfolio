@@ -38,7 +38,7 @@ function ProjectCardPortfolio() {
         mt={6}
         overflow="hidden"
         bgColor="background"
-        height={390}
+        height={350}
         width={"100%"}
         maxW={350}
         display="flex"

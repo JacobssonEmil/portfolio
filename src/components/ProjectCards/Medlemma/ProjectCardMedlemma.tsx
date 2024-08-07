@@ -38,9 +38,9 @@ function ProjectCardMedlemma() {
         mt={6}
         overflow="hidden"
         bgColor="background"
-        height={390}
+        height={400}
         width={"100%"}
-        maxW={350}
+        maxW={400}
         display="flex"
         flexDirection="column"
         border="1px solid" // Add border here
@@ -58,9 +58,9 @@ function ProjectCardMedlemma() {
           src="/images/Medlemma.png"
           alt={t("Medlemma Title")}
           objectFit="cover"
-          height={175}
-          width="100%" // Ensures image takes full width of the card
-          maxWidth={350} // Ensures image does not exceed the card's width
+          height={"55%"}
+          width="100%"
+          maxWidth={"100%"}
         />
         <Stack
           mt="0"
@@ -85,7 +85,7 @@ function ProjectCardMedlemma() {
           >
             {t("Medlemma Title")}
           </Heading>
-          <Text noOfLines={4} color={"subtleText"}>
+          <Text noOfLines={2} color={"subtleText"}>
             {" "}
             {/* Adjusted to match the number of lines in Smart House and BookDB cards */}
             {t("Medlemma Description")}
@@ -99,6 +99,7 @@ function ProjectCardMedlemma() {
                   leftIcon={<FaGithub />}
                   variant="outline"
                   color="text"
+                  height={9}
                   size="sm"
                   _hover={{
                     transform: "scale(1.05)",
@@ -112,6 +113,7 @@ function ProjectCardMedlemma() {
               <Button
                 onClick={onOpen}
                 size="sm"
+                height={9}
                 bgColor="text"
                 color="background"
                 _hover={{
