@@ -33,7 +33,7 @@ const Navbar = () => {
     { name: t("Projects"), ref: "projects" },
     { name: t("Experience title"), ref: "experience" },
     { name: t("Education"), ref: "education" },
-    { name: t("Technologies and Tools"), ref: "skills" },
+    { name: t("Skills and Technologies Title"), ref: "skills" },
   ];
 
   return (

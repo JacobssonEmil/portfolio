@@ -33,7 +33,7 @@ function Skills() {
       <Heading size="lg" color="text">
         <chakra.span>
           <Flex>
-            <Text color="text">{t("Technologies and Tools Title")}</Text>
+            <Text color="text">{t("Skills and Technologies Title")}</Text>
           </Flex>
         </chakra.span>
       </Heading>
