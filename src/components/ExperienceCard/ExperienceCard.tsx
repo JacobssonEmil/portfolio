@@ -6,7 +6,7 @@ function ExperienceCard() {
   const milestones = [
     {
       id: 1,
-      date: "Aug 2024 - present",
+      date: t("Full-stack developer date"),
       title: t("Full-stack Developer"),
       description: "Luday SE • Internship",
       location: "Gothenburg, Västa Götaland County, Sweden • Remote",

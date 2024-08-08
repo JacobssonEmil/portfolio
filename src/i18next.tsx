@@ -86,6 +86,7 @@ const initI18n = () => {
             "All rights reserved": "All rights reserved.",
             // Experience Page
             "Experience title": "Experience",
+            "Full-stack developer date": "Aug 2024 - present",
           },
         },
         sv: {
@@ -151,6 +152,7 @@ const initI18n = () => {
             "All rights reserved": "Alla rättigheter förbehållna.",
             // Experience Page
             "Experience title": "Erfarenhet",
+            "Full-stack developer date": "Aug 2024 - nutid",
           },
         },
       },
