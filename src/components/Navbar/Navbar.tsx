@@ -31,6 +31,7 @@ const Navbar = () => {
   const Links = [
     { name: t("About"), ref: "about" },
     { name: t("Projects"), ref: "projects" },
+    { name: t("Experience title"), ref: "experience" },
     { name: t("Education"), ref: "education" },
     { name: t("Technologies and Tools"), ref: "skills" },
   ];
