@@ -44,8 +44,8 @@ const initI18n = () => {
             "Bachelor Program in Software Development":
               "Bachelor Program in Software Development",
             "Technology Program": "Technology Program",
-            "University Kristianstad": "Kristianstad University, Kristianstad",
-            "NTI High School": "NTI Gymnasiet, Helsingborg",
+            "University Kristianstad": "Kristianstad University",
+            "NTI High School": "NTI Gymnasiet",
             // Project Page
             "Projects Title": "Projects",
             "Medlemma Title": "Medlemma",
@@ -84,6 +84,8 @@ const initI18n = () => {
             // Footer Page
             "Contact me directly at": "Contact me directly at",
             "All rights reserved": "All rights reserved.",
+            // Experience Page
+            "Experience title": "Experience",
           },
         },
         sv: {
@@ -107,8 +109,8 @@ const initI18n = () => {
             "Bachelor Program in Software Development":
               "Kandidatexamen i datavetenskap",
             "Technology Program": "Teknikprogrammet",
-            "University Kristianstad": "Högskolan Kristianstad, Kristianstad",
-            "NTI High School": "NTI Gymnasiet, Helsingborg",
+            "University Kristianstad": "Högskolan Kristianstad",
+            "NTI High School": "NTI Gymnasiet",
             // Project Page
             "Projects Title": "Projekt",
             "Medlemma Title": "Medlemma",
@@ -147,6 +149,8 @@ const initI18n = () => {
             // Footer Page
             "Contact me directly at": "Kontakta mig direkt på",
             "All rights reserved": "Alla rättigheter förbehållna.",
+            // Experience Page
+            "Experience title": "Erfarenhet",
           },
         },
       },

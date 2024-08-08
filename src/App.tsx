@@ -7,6 +7,7 @@ import Skills from "./pages/Skills/Skills";
 import Footer from "./pages/Footer/Footer";
 import ScrollIndicator from "./components/ScrollArrow/ScrollArrow";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
+import Experience from "./pages/Experience/Experience";
 
 const App = (): JSX.Element => {
   return (
@@ -31,11 +32,15 @@ const App = (): JSX.Element => {
         <Box maxW="1270px" mx="auto">
           <Divider borderColor={"gray.300"} />
         </Box>
-
+        <Box id="experience" pt={70} pb={70}>
+          <Experience />
+        </Box>
+        <Box maxW="1270px" mx="auto">
+          <Divider borderColor={"gray.300"} />
+        </Box>
         <Box id="education" pt={70} pb={70}>
           <Education />
         </Box>
-
         <Box maxW="1270px" mx="auto">
           <Divider borderColor={"gray.300"} />
         </Box>
@@ -44,6 +49,7 @@ const App = (): JSX.Element => {
           <Skills />
         </Box>
       </Box>
+
       <Box id="footer" mt={35}>
         <Footer />
       </Box>

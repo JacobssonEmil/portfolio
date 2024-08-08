@@ -1,22 +1,15 @@
 import { Box, Container, Text, HStack, Heading } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
-function EducationCard() {
+function ExperienceCard() {
   const { t } = useTranslation();
   const milestones = [
     {
       id: 1,
-      date: "Aug 2021 - Jun 2024",
-      title: t("Bachelor Program in Software Development"),
-      description: t("University Kristianstad"),
-      location: "Kristianstad, Skåne County, Sweden ",
-    },
-    {
-      id: 2,
-      date: "Aug 2017 - Jun 2020",
-      title: t("Technology Program"),
-      description: t("NTI High School"),
-      location: "Helsingborg, Skåne County, Sweden ",
+      date: "Aug 2024 - present",
+      title: t("Full-stack Developer"),
+      description: "Luday SE • Internship",
+      location: "Gothenburg, Västa Götaland County, Sweden • Remote",
     },
   ];
 
@@ -54,4 +47,4 @@ function EducationCard() {
   );
 }
 
-export default EducationCard;
+export default ExperienceCard;
